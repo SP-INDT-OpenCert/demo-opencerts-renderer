@@ -7,10 +7,14 @@
 import DefaultTemplate from "./default";
 import CustomTemplate from "./customTemplate";
 import GovTechDemoCert from "./govtechDemoCert";
+import SP_2019_MAIN from "./SPTemplate/SP-2019-MAIN";
+import SP_2019_DPCERT from "./SPTemplate/SP-2019-DPCERT";
 
 export default {
   default: DefaultTemplate,
   CUSTOM_TEMPLATE: CustomTemplate,
   GOVTECH_DEMO: GovTechDemoCert,
+  SP_2019_MAIN: SP_2019_MAIN,
+  SP_2019_DPCERT: SP_2019_DPCERT,
   NULL: []
 };
