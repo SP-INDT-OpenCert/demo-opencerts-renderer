@@ -71,9 +71,9 @@ return (
   <div className="row" style={{height:'100px'}} ></div>
   <div className="row">
 	<div className="col-2"></div>
-    <div className="col-3 mt-5"><img src={IMG_CERT_SEAL} style={{width:'168px'}} /></div>
+    <div className="col-3 mt-0"><img src={IMG_CERT_SEAL} style={{width:'140px'}} /></div>
 	<div className="col-2"></div>
-    <div className="col-4">
+    <div className="col-4 mt-2">
 	    <div className="ml-5"><img src={get(document, 'additionalData.certSignatories[0].signature')} style={{width:'160px'}} /></div>
 		<div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
         <div className="text-center font-weight-bold"
