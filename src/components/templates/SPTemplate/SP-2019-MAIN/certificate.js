@@ -96,7 +96,7 @@ return (
   <div className="row">
   <div className="h6 my-5 ml-3 d-flex"
 	style={{fontFamily:'Times'}} >
-    {document.recipient.studentid} </div>
+    {document.recipient.studentId} </div>
   </div>
 
 </div>
