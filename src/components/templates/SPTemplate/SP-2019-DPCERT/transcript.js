@@ -53,7 +53,7 @@ const renderFooter = p_Cert => (
 	    <div className="ml-5"><img src={get(p_Cert, 'additionalData.transcriptSignatories[0].signature')} style={{width:'160px'}} /></div>
         <div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
         <div className="text-center font-weight-bold"
-		style={{fontFamily:'Times', fontSize:'12px'}} > Director, Academic Services </div>
+		style={{fontFamily:'Times', fontSize:'12px'}} > {document.additionalData.transcriptSignatories[0].position} </div>
     </div>
     <div className="col-1" />
   </div>
