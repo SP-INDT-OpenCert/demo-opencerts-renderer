@@ -16,8 +16,6 @@ class Template extends Component {
     const { document, handleObfuscation } = this.props;
     const transcriptData = get(document, "transcript", []);
 	const renderHeader = p_Cert => {
-	  //const serial = p_Cert.additionalData.studentid
-	  // also OK: get(p_Cert, "additionalData.studentid");
 	  return (
 	  <div className="container">
 		<div className="row h3 my-4">
@@ -32,7 +30,7 @@ class Template extends Component {
 	</div>
     <div className="row h5">
       <div className="col-2"> Admission No: </div>
-	  <div className="col"> {p_Cert.additionalData.studentid} </div>
+	  <div className="col"> {p_Cert.recipient.studentId} </div>
 	</div>
     <div className="row h5">
       <div className="col-2"> Name: </div>
@@ -50,7 +48,7 @@ const renderFooter = p_Cert => (
   <div className="row">
     <div className="col-8" />
     <div className="col-3">
-	    <div className="ml-5"><img src={get(p_Cert, 'additionalData.transcriptSignatories[0].signature')} style={{width:'160px'}} /></div>
+	    <div className="ml-5"><img src={get(p_Cert, 'additionalData.transcriptSignatories[0].signature')} alt="sign" style={{width:'160px'}} /></div>
         <div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
         <div className="text-center font-weight-bold"
 		style={{fontFamily:'Times', fontSize:'12px'}} > {document.additionalData.transcriptSignatories[0].position} </div>
@@ -183,7 +181,7 @@ const renderEachModule = (p_objMod,iSn) => {
 
       //<div className="col-2">{objOthItems && `oth:${xoth}`}</div>
 const renderTermTranscript = (p_ObjTranscript,iSn) => {
-  var xs = get(p_ObjTranscript, 'name')
+  //var xs = get(p_ObjTranscript, 'name')
   //ok: var xs = p_ObjTranscript.Xname
   const objOthItems = get(p_ObjTranscript, 'otherItems');
   // ok: const xoth = get(p_ObjTranscript, 'otherItems[0].name');

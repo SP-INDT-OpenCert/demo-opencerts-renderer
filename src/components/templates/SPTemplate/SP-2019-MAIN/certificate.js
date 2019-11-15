@@ -15,7 +15,7 @@ return (
 <div className="container" style={{width:'800px', backgroundColor:'rgb(255,255,238)', borderStyle:'solid', borderColor:'rgb(204,204,170)'}}>
   <div className="row">
     <div className="col"></div>
-    <div className="col my-5 justify-content-center"><img src={IMG_CERT_SPLOGO} width='396' height='128'/></div>
+    <div className="col my-5 justify-content-center"><img src={IMG_CERT_SPLOGO} alt="SP Logo" width='396' height='128'/></div>
     <div className="col"></div>
   </div>
 
@@ -71,17 +71,17 @@ return (
   <div className="row" style={{height:'100px'}} ></div>
   <div className="row">
 	<div className="col-2"></div>
-    <div className="col-3 mt-5"><img src={IMG_CERT_SEAL} style={{width:'168px'}} /></div>
+    <div className="col-3 mt-5"><img src={IMG_CERT_SEAL} alt="Seal" style={{width:'168px'}} /></div>
 	<div className="col-2"></div>
     <div className="col-4">
-	    <div className="ml-5"><img src={get(document, 'additionalData.certSignatories[0].signature')} style={{width:'160px'}} /></div>
+	    <div className="text-center"><img src={get(document, 'additionalData.certSignatories[0].signature')} alt="Sign1" style={{width:'160px'}} /></div>
 		<div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
         <div className="text-center font-weight-bold"
 		style={{fontFamily:'Times', fontSize:'12px'}} > {document.additionalData.certSignatories[0].position} </div>
 
 		<div className="row" style={{height:'20px'}} ></div>
 
-        <div className="ml-5"><img src={get(document, 'additionalData.certSignatories[1].signature')} style={{width:'120px'}} /></div>
+        <div className="text-center"><img src={get(document, 'additionalData.certSignatories[1].signature')} alt="Sign2" style={{width:'120px'}} /></div>
 		<div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
         <div className="text-center font-weight-bold"
 		style={{fontFamily:'Times', fontSize:'12px'}} > {document.additionalData.certSignatories[1].position} </div>
