@@ -7,8 +7,8 @@
 import DefaultTemplate from "./default";
 import CustomTemplate from "./customTemplate";
 import GovTechDemoCert from "./govtechDemoCert";
-import SP_2019_MAIN from "./SPTemplate/SP-2019-MAIN";
-import SP_2019_DPCERT from "./SPTemplate/SP-2019-DPCERT";
+import SP_2019_MAIN from "./SPTemplate/PET/SP-2019-MAIN";
+import SP_2019_DPCERT from "./SPTemplate/PET/SP-2019-DPCERT";
 
 export default {
   default: DefaultTemplate,
