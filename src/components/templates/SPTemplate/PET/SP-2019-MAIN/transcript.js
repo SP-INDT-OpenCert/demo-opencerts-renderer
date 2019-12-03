@@ -23,18 +23,18 @@ class Template extends Component {
 			ACADEMIC TRANSCRIPT
 		  </div>
 		</div>
+		{/* AS decision to omit date
 		<div className="row h5">
-		 
-	  <div className="col text-lg-right">
+		  <div className="col text-lg-right">
         Date of Issue: &nbsp; {format(p_Cert.issuedOn, 'D MMM YYYY')} </div>
-	</div>
-    <div className="row h5">
-      <div className="col-2"> Admission No: </div>
-	  <div className="col"> {p_Cert.recipient.studentId} </div>
-	</div>
-    <div className="row h5">
-      <div className="col-2"> Name: </div>
-	  <div className="col"> {p_Cert.recipient.name} </div>
+		</div> */}
+		<div className="row h5">
+		  <div className="col-2"> Admission No: </div>
+		  <div className="col"> {p_Cert.recipient.studentId} </div>
+		</div>
+		<div className="row h5">
+		  <div className="col-2"> Name: </div>
+		  <div className="col"> {p_Cert.recipient.name} </div>
 		</div>
 		{/*<hr className="mb-1" />
 		<hr className="my-0" /> */}
@@ -256,18 +256,20 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
 
 return (
 document.transcript ? (
-<div className="container" style={{maxWidth:'1100px', backgroundColor:'rgb(248,248,255)', fontFamily:'Times', fontSize: "1.0rem", borderStyle:'solid', borderColor:'rgb(204,204,170)' }}>
+<div className="container">
   <HideTranscriptBanner
-    hideTranscript={() => handleObfuscation("transcript")}
+      hideTranscript={() => handleObfuscation("transcript")}
   />
-  <div className="row">
-  {renderHeader(document)}
-  </div>
-  <div className="row" style={{ fontSize: '1.0rem'}}>
-  {renderTranscripts}
-  </div>
-  <div className="row">
-  {renderFooter(document)}
+  <div className="container" style={{maxWidth:'1100px', backgroundColor:'rgb(248,248,255)', fontFamily:'Times', fontSize: "1.0rem", borderStyle:'solid', borderColor:'rgb(204,204,170)' }}>
+	<div className="row">
+	  {renderHeader(document)}
+	</div>
+	<div className="row" style={{ fontSize: '1.0rem'}}>
+	  {renderTranscripts}
+	</div>
+	<div className="row">
+	  {renderFooter(document)}
+	</div>
   </div>
 </div>
 ): null

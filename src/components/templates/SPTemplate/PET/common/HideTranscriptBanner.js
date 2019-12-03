@@ -13,7 +13,7 @@ const HideTranscriptBanner = ({ hideTranscript }) => (
       <div className="ml-1 h3 pointer" style={{ display: "inline-block" }} onClick={hideTranscript} >
         <FontAwesomeIcon icon={faCut} cursor="pointer" color="black" />
       </div>
-      <div className="h5" style={{ display: "inline-block" }}>
+      <div style={{ display: "inline-block" }}>
         Click the above scissors icon if you wish to have a copy of this <i>opencert</i> file
 		without your transcript. Then click on the &nbsp;
 		<FontAwesomeIcon icon={faEnvelope} color="black" />

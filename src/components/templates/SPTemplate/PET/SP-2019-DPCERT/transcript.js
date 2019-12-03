@@ -23,18 +23,18 @@ class Template extends Component {
 			ACADEMIC TRANSCRIPT
 		  </div>
 		</div>
+		{/* AS decision to omit date
 		<div className="row h5">
-		 
-	  <div className="col text-lg-right">
+		  <div className="col text-lg-right">
         Date of Issue: &nbsp; {format(p_Cert.issuedOn, 'D MMM YYYY')} </div>
-	</div>
-    <div className="row h5">
-      <div className="col-2"> Admission No: </div>
-	  <div className="col"> {p_Cert.recipient.studentId} </div>
-	</div>
-    <div className="row h5">
-      <div className="col-2"> Name: </div>
-	  <div className="col"> {p_Cert.recipient.name} </div>
+		</div> */}
+		<div className="row h5">
+		  <div className="col-2"> Admission No: </div>
+		  <div className="col"> {p_Cert.recipient.studentId} </div>
+		</div>
+		<div className="row h5">
+		  <div className="col-2"> Name: </div>
+		  <div className="col"> {p_Cert.recipient.name} </div>
 		</div>
 		{/*<hr className="mb-1" />
 		<hr className="my-0" /> */}
