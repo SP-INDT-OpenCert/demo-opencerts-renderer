@@ -39,7 +39,7 @@ return (
   <div className="h5 mt-4 d-flex justify-content-center"
     style={{fontFamily:'Times'}}>
     It is hereby certified that</div>
-  <div className="h3 mt-4 mb-0 justify-content-center font-weight-bold font-italic d-flex"
+  <div className="h3 mt-4 mb-2 justify-content-center font-weight-bold font-italic d-flex"
 	style={{fontFamily:'Garamond'}} >
 	{document.recipient.name} </div>
 
@@ -57,7 +57,7 @@ return (
     <div className="col-1 h5 mt-4 d-flex justify-content-center"
 	style={{fontFamily:'Times'}} > on </div>
     <div className="col-3">
-	  <div className="h4 mt-1 d-flex justify-content-center font-weight-bold font-italic"
+	  <div className="h4 mt-3 mb-2 d-flex justify-content-center font-weight-bold font-italic"
 		style={{fontFamily:'Garamond'}} >
 		{format(document.graduationDate, 'D MMMM YYYY')} </div>
 	  <div className="row my-0">
