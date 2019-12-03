@@ -256,18 +256,20 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
 
 return (
 document.transcript ? (
-<div className="container" style={{maxWidth:'1100px', backgroundColor:'rgb(248,248,255)', fontFamily:'Times', fontSize: "1.0rem", borderStyle:'solid', borderColor:'rgb(204,204,170)' }}>
+<div className="container">
   <HideTranscriptBanner
-    hideTranscript={() => handleObfuscation("transcript")}
+      hideTranscript={() => handleObfuscation("transcript")}
   />
-  <div className="row">
-  {renderHeader(document)}
-  </div>
-  <div className="row" style={{ fontSize: '1.0rem'}}>
-  {renderTranscripts}
-  </div>
-  <div className="row">
-  {renderFooter(document)}
+  <div className="container" style={{maxWidth:'1100px', backgroundColor:'rgb(248,248,255)', fontFamily:'Times', fontSize: "1.0rem", borderStyle:'solid', borderColor:'rgb(204,204,170)' }}>
+	<div className="row">
+	  {renderHeader(document)}
+	</div>
+	<div className="row" style={{ fontSize: '1.0rem'}}>
+	  {renderTranscripts}
+	</div>
+	<div className="row">
+	  {renderFooter(document)}
+	</div>
   </div>
 </div>
 ): null
