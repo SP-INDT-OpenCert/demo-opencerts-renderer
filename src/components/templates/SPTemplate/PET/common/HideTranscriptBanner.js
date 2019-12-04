@@ -6,7 +6,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 
 const HideTranscriptBanner = ({ hideTranscript }) => (
-  <div id="banner-privacy-filter" className="screen-only">
+  <div id="banner-privacy-filter" className="d-print-none">
     <div className="row"
       style={{backgroundColor: "whitesmoke", color: "steelblue", padding: 20, marginBottom: 20 }}
     >
