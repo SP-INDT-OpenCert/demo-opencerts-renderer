@@ -29,10 +29,12 @@ class Template extends Component {
         Date of Issue: &nbsp; {format(p_Cert.issuedOn, 'D MMM YYYY')} </div>
 		</div> */}
 		<div className="row h5">
+		  <div className="col-1" />
 		  <div className="col-2"> Admission No: </div>
 		  <div className="col"> {p_Cert.recipient.studentId} </div>
 		</div>
 		<div className="row h5">
+		  <div className="col-1" />
 		  <div className="col-2"> Name: </div>
 		  <div className="col"> {p_Cert.recipient.name} </div>
 		</div>
@@ -55,114 +57,115 @@ const renderFooter = p_Cert => (
     </div>
     <div className="col-1" />
   </div>
-  <div className="row" style={{height:'20px'}} ></div>
+  <div className="row" style={{height:'48px'}} ></div>
     
   <div className="row" style={{ fontSize: '0.68rem' }}>
+    <div className="col-1" />
     <div className="col-4">
-      <table>
-        <tbody className="align-top">
-          <tr>
-            <th>GRADE &nbsp;</th>
-            <th>DESCRIPTION</th>
-            <th>GRADE <br />POINT</th>
-          </tr>
-          <tr>
-            <td>DIST</td>
-            <td>DISTINCTION</td>
-            <td className="text-center">4.0</td>
-          </tr>
-          <tr>
-            <td>A</td>
-            <td>EXCELLENT (80%-100%)</td>
-            <td className="text-center">4.0</td>
-          </tr>
-          <tr>
-            <td>B+</td>
-            <td>VERY GOOD (75%-79%)</td>
-            <td className="text-center">3.5</td>
-          </tr>
-          <tr>
-            <td>B</td>
-            <td>GOOD (70%-74%)</td>
-            <td className="text-center">3.0</td>
-          </tr>
-          <tr>
-            <td>C+</td>
-            <td>GOOD CREDIT (65%-69%)</td>
-            <td className="text-center">2.5</td>
-          </tr>
-          <tr>
-            <td>C</td>
-            <td>CREDIT (60%-64%)</td>
-            <td className="text-center">2.0</td>
-          </tr>
-          <tr>
-            <td>D+</td>
-            <td>GOOD PASS (55%-59%)</td>
-            <td className="text-center">1.5</td>
-          </tr>
-          <tr>
-            <td> D </td>
-            <td>PASS (50%-54%)</td>
-            <td className="text-center">1.0</td>
-          </tr>
-          <tr>
-            <td> D- </td>
-            <td>SUBSIDIARY PASS </td>
-            <td className="text-center">0.5</td>
-          </tr>
-          <tr>
-            <td>F</td>
-            <td>FAIL</td>
-            <td className="text-center">0.0</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="row">
+        <div className="col-2"><u>GRADE</u> &nbsp;</div>
+        <div className="col-6"><u>DESCRIPTION</u></div>
+        <div className="col-2 text-center">GRADE <br /><u>POINT</u></div>
+      </div>
+      <div className="row">
+        <div className="col-2">DIST</div>
+        <div className="col-6">DISTINCTION</div>
+        <div className="col-2 text-center">4.0</div>
+      </div>
+      <div className="row">
+        <div className="col-2">A</div>
+        <div className="col-6">EXCELLENT (80%-100%)</div>
+        <div className="col-2 text-center">4.0</div>
+      </div>
+      <div className="row">
+        <div className="col-2">B+</div>
+        <div className="col-6">VERY GOOD (75%-79%)</div>
+        <div className="col-2 text-center">3.5</div>
+      </div>
+      <div className="row">
+        <div className="col-2">B</div>
+        <div className="col-6">GOOD (70%-74%)</div>
+        <div className="col-2 text-center">3.0</div>
+      </div>
+      <div className="row">
+        <div className="col-2">C+</div>
+        <div className="col-6">GOOD CREDIT (65%-69%)</div>
+        <div className="col-2 text-center">2.5</div>
+      </div>
+      <div className="row">
+        <div className="col-2">C</div>
+        <div className="col-6">CREDIT (60%-64%)</div>
+        <div className="col-2 text-center">2.0</div>
+      </div>
+      <div className="row">
+        <div className="col-2">D+</div>
+        <div className="col-6">GOOD PASS (55%-59%)</div>
+        <div className="col-2 text-center">1.5</div>
+      </div>
+      <div className="row">
+        <div className="col-2">D </div>
+        <div className="col-6">PASS (50%-54%)</div>
+        <div className="col-2 text-center">1.0</div>
+      </div>
+      <div className="row">
+        <div className="col-2"> D- </div>
+        <div className="col-6">SUBSIDIARY PASS </div>
+        <div className="col-2 text-center">0.5</div>
+      </div>
+      <div className="row">
+        <div className="col-2">F</div>
+        <div className="col-6">FAIL</div>
+        <div className="col-2 text-center">0.0</div>
+      </div>
     </div>
 
     <div className="col-4">
-      <table>
-        <tbody className="align-top">
-          <tr>
-            <th>GRADE &nbsp;</th>
-            <th>DESCRIPTION</th>
-            <th>GRADE <br />POINT</th>
-          </tr>
-          <tr>
-            <td>P</td>
-            <td>NON-GRADED PASS</td>
-            <td className="text-center">0.5</td>
-          </tr>
-          <tr>
-            <td>UG</td>
-            <td>NON-GRADED PASS</td>
-            <td className="text-center">NA</td>
-          </tr>
-          <tr>
-            <td>UP</td>
-            <td>PASS IN MODULE WHICH <br />HAS NO GRADE POINT</td>
-            <td className="text-center">NA</td>
-          </tr>
-          <tr>
-            <td>UF</td>
-            <td>FAIL IN MODULE WHICH <br /> HAS NO GRADE POINT</td>
-            <td className="text-center">NA</td>
-          </tr>
-          <tr>
-            <td>EX</td>
-            <td>EXEMPTED</td>
-            <td className="text-center">NA</td>
-          </tr>
-          <tr>
-            <td>ABS</td>
-            <td>ABSENT</td>
-            <td className="text-center">0.0</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="row">
+        <div className="col-2"><u>GRADE</u> &nbsp;</div>
+        <div className="col-7"><u>DESCRIPTION</u></div>
+        <div className="col-2 text-center">GRADE <br /><u>POINT</u></div>
+      </div>
+      <div className="row">
+        <div className="col-2">P</div>
+        <div className="col-7">NON-GRADED PASS</div>
+        <div className="col-2 text-center">0.5</div>
+      </div>
+      <div className="row">
+        <div className="col-2">UG</div>
+        <div className="col-7">NON-GRADED PASS</div>
+        <div className="col-2 text-center">NA</div>
+      </div>
+      <div className="row">
+        <div className="col-2">UP</div>
+        <div className="col-7">PASS IN MODULE WHICH HAS NO GRADE POINT</div>
+        <div className="col-2 text-center">NA</div>
+      </div>
+      <div className="row">
+        <div className="col-2">UF</div>
+        <div className="col-7">FAIL IN MODULE WHICH HAS NO GRADE POINT</div>
+        <div className="col-2 text-center">NA</div>
+      </div>
+      <div className="row">
+        <div className="col-2">EX</div>
+        <div className="col-7">EXEMPTED</div>
+        <div className="col-2 text-center">NA</div>
+      </div>
+      <div className="row">
+        <div className="col-2">ABS</div>
+        <div className="col-7">ABSENT</div>
+        <div className="col-2 text-center">0.0</div>
+      </div>
     </div>
     <div className="col" />
   </div>
+  <div className="row" style={{height:'8px'}} ></div>
+  <div className="row" style={{ fontSize: '0.68rem' }}>
+    <div className="col-1" />
+    <div className="col-8">
+	  Semester and Cumulative GPA scores shown above (if any) do not include modules marked with an (*)
+    </div>
+  </div>
+  <div className="row" style={{height:'18px'}} ></div>
   
  </div>
 )
@@ -260,7 +263,8 @@ document.transcript ? (
   <HideTranscriptBanner
       hideTranscript={() => handleObfuscation("transcript")}
   />
-  <div className="container" style={{maxWidth:'1100px', backgroundColor:'rgb(248,248,255)', fontFamily:'Times', fontSize: "1.0rem", borderStyle:'solid', borderColor:'rgb(204,204,170)' }}>
+  <div className="container" style={{maxWidth:'1100px', backgroundColor:'rgb(248,248,255)', fontFamily:'Times',
+      fontSize: "1.0rem", borderStyle:'solid', borderColor:'rgb(204,204,170)' }}>
 	<div className="row">
 	  {renderHeader(document)}
 	</div>
