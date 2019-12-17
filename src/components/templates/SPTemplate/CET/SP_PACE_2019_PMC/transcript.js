@@ -347,7 +347,7 @@ return (
     <HideTranscriptBanner
       hideTranscript={() => handleObfuscation("transcript")}
     />
-  <div className="container" style={{maxWidth:'1100px', backgroundColor:'rgb(248,248,255)', fontFamily:'Times', fontSize: "1.0rem", borderStyle:'solid', borderColor:'rgb(204,204,170)' }}>
+  <div className="container" style={{maxWidth:'1100px', backgroundColor:'rgb(255,255,255)', fontFamily:'Times', fontSize: "1.0rem", borderStyle:'solid', borderColor:'rgb(204,204,170)' }}>
     <div className="row">
       {renderHeader(document)}
     </div>

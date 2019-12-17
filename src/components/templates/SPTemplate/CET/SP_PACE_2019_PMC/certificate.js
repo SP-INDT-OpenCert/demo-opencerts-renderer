@@ -13,7 +13,7 @@ const addOnDisp = get(document,'additionalData.diplomaAddOn').map((txtArr,i) => 
 )
 
 return (
-<div className="container" style={{width:'800px', backgroundColor:'rgb(255,255,238)', borderStyle:'solid', borderColor:'rgb(204,204,170)'}}>
+<div className="container" style={{width:'800px', backgroundColor:'rgb(255,255,255)', borderStyle:'solid', borderColor:'rgb(204,204,170)'}}>
   <div className="row">
     <div className="col"></div>
     <div className="col my-5 justify-content-center"><img src={IMG_CERT_SPLOGO} alt="SP Logo" width='396' height='128'/></div>
@@ -22,7 +22,7 @@ return (
 
   {/*<div className="h2 mt-5 mb-0 font-weight-bold d-flex justify-content-center" style={{fontFamily:'Times', fontVariant:'small-caps'}} >*/}
   <div className="mt-5 mb-0 font-weight-bold d-flex justify-content-center"
-  style={{fontFamily:'Gill Sans,Gill Sans MT,CAlibri,sans-serif', fontSize:'37px',textTransform:'uppercase',textAlign:'center'}} >
+  style={{fontFamily:'Gill Sans,Gill Sans MT,Calibri,sans-serif', fontSize:'37px',textTransform:'uppercase',textAlign:'center'}} >
     {document.recipient.name} </div>
    
   {
@@ -38,34 +38,34 @@ return (
 	//addOnDisp
   }
   
-  <div className="mt-2 d-flex justify-content-center" style={{fontFamily:'Gill Sans,Gill Sans MT,CAlibri,sans-serif',fontSize:'21px',textAlign:'center'}}>
+  <div className="mt-2 d-flex justify-content-center" style={{fontFamily:'Gill Sans,Gill Sans MT,Calibri,sans-serif',fontSize:'21px',textAlign:'center'}}>
     having passed all required assessments </div>
 
-    <div className="mt-2 d-flex justify-content-center" style={{fontFamily:'Gill Sans,Gill Sans MT,CAlibri,sans-serif',fontSize:'21px',textAlign:'center'}}>
+    <div className="mt-2 d-flex justify-content-center" style={{fontFamily:'Gill Sans,Gill Sans MT,Calibri,sans-serif',fontSize:'21px',textAlign:'center'}}>
     was awarded the </div>
 
-   <div className="my-2 d-flex justify-content-center"    style={{fontFamily:'Gill Sans,Gill Sans MT,CAlibri,sans-serif',fontSize:'24px',textAlign:'center'}} >
+   <div className="my-2 d-flex justify-content-center"    style={{fontFamily:'Gill Sans,Gill Sans MT,Calibri,sans-serif',fontSize:'24px',textAlign:'center'}} >
   <b>Certificate</b> </div>
   {/*{addOnDisp} */}
 
-  <div className="mt-2 d-flex justify-content-center"	style={{fontFamily:'Gill Sans,Gill Sans MT,CAlibri,sans-serif',fontSize:'21px',textAlign:'center'}} >
+  <div className="mt-2 d-flex justify-content-center"	style={{fontFamily:'Gill Sans,Gill Sans MT,Calibri,sans-serif',fontSize:'21px',textAlign:'center'}} >
     in </div>
 
-  <div className="mt-2 d-flex justify-content-center"	style={{fontFamily:'Gill Sans,Gill Sans MT,CAlibri,sans-serif',fontSize:'24px',textAlign:'center'}} >
+  <div className="mt-2 d-flex justify-content-center"	style={{fontFamily:'Gill Sans,Gill Sans MT,Calibri,sans-serif',fontSize:'24px',textAlign:'center'}} >
     <b>{document.additionalData.ModulerCertDescr}</b> </div>
     
   <div className="mt-2 d-flex justify-content-center" > 
-       <text style={{fontFamily:'Gill Sans,Gill Sans MT,CAlibri,sans-serif',fontSize:'21px',textAlign:'center'}}> conducted by the&nbsp;</text> 
-       <text style={{fontFamily:'Gill Sans,Gill Sans MT,CAlibri,sans-serif',fontSize:'22px',textAlign:'center'}}>{document.additionalData.SchoolDescr}</text>
+       <text style={{fontFamily:'Gill Sans,Gill Sans MT,Calibri,sans-serif',fontSize:'21px',textAlign:'center'}}> conducted by the&nbsp;</text> 
+       <text style={{fontFamily:'Gill Sans,Gill Sans MT,Calibri,sans-serif',fontSize:'22px',textAlign:'center'}}>{document.additionalData.SchoolDescr}</text>
   </div>
   
-  <div className="mt-2 d-flex justify-content-center" style={{fontFamily:'Gill Sans,Gill Sans MT,CAlibri,sans-serif',fontSize:'21px',textAlign:'center'}}>
+  <div className="mt-2 d-flex justify-content-center" style={{fontFamily:'Gill Sans,Gill Sans MT,Calibri,sans-serif',fontSize:'21px',textAlign:'center'}}>
     Leading to the </div>
 
-  <div className="mt-2 d-flex justify-content-center"	style={{fontFamily:'Gill Sans,Gill Sans MT,CAlibri,sans-serif',fontSize:'24px',textAlign:'center'}} > 
+  <div className="mt-2 d-flex justify-content-center"	style={{fontFamily:'Gill Sans,Gill Sans MT,Calibri,sans-serif',fontSize:'24px',textAlign:'center'}} > 
   {document.additionalData.diplomaFullDescr} </div>
 
-  <div className="mt-2 d-flex justify-content-center" style={{fontFamily:'Gill Sans,Gill Sans MT,CAlibri,sans-serif',fontSize:'21px',textAlign:'center'}}>
+  <div className="mt-2 d-flex justify-content-center" style={{fontFamily:'Gill Sans,Gill Sans MT,Calibri,sans-serif',fontSize:'21px',textAlign:'center'}}>
   on &nbsp;<b>{format(document.graduationDate, 'D MMMM YYYY')}</b>
   </div>       
 

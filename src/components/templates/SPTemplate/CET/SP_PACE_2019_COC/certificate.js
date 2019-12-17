@@ -44,7 +44,7 @@ return(
 }
 
 return (
-<div className="container" style={{width:'800px', backgroundColor:'rgb(255,255,238)', borderStyle:'solid', borderColor:'rgb(204,204,170)'}}>
+<div className="container" style={{width:'800px', backgroundColor:'rgb(255,255,255)', borderStyle:'solid', borderColor:'rgb(204,204,170)'}}>
   <div className="row">
     <div className="col"></div>
     <div className="col my-5 justify-content-center"><img src={IMG_CERT_SPLOGO} alt="SP Logo" width='396' height='128'/></div>
