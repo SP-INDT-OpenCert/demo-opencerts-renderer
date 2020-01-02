@@ -149,7 +149,7 @@ const renderFooter = p_Cert => (
             <th width="100px" className="text-center"><u>GRADE</u> <br /><u>POINTS</u></th>
           </tr>
           <tr>
-            <td>DISdebug</td>
+            <td>DIS</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
             <td>DISTINCTION</td>
             <td className="text-center">4.0</td>
