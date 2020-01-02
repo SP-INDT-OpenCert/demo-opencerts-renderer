@@ -6,10 +6,6 @@ import HideTranscriptBanner from "../common/HideTranscriptBanner";
 import ObfuscatableValue from "../../../../TemplateCommon/Privacy/ObfuscatableValue";
 import { format } from 'date-fns'
 import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages'
-<<<<<<< HEAD
-=======
-import scss from "./PACE.format.scss";
->>>>>>> b4d4564b5be0c091136e713ca683c9d5b9d68ad8
 
 class Template extends Component {
   constructor(props) {
@@ -30,11 +26,7 @@ class Template extends Component {
     <div className="col"></div>
     <div className="col my-5 justify-content-centre"><img src={IMG_CERT_SPLOGO} alt="SP Logo" width='200' height='75'/></div>
     </div>
-<<<<<<< HEAD
     {/*<div className="row" style={{ fontSize: '0.68rem',fontFamily:'Calibri' }}>
-=======
-    <div className="row" style={{ fontSize: '0.68rem',fontFamily:'Calibri' }}>
->>>>>>> b4d4564b5be0c091136e713ca683c9d5b9d68ad8
     <div className="col-11 text-lg-right" style={{color:'red'}}>
       PROFESSIONAL & ADULT CONTINUING EDUCATION(PACE) ACADEMY<br/>
     </div>
@@ -46,11 +38,7 @@ class Template extends Component {
       tel: (65) 6772 1055 fax: (65) 6772 1957<br/>
       www.sp.edu.sg
 		</div>
-<<<<<<< HEAD
     </div>*/}
-=======
-		</div>
->>>>>>> b4d4564b5be0c091136e713ca683c9d5b9d68ad8
 		<div className="row h4 my-4" style={{ fontSize: '13px',fontFamily:'Calibri'}}>
 		  <div className="col font-weight-bold text-lg-center">
 			ACADEMIC TRANSCRIPT
@@ -84,11 +72,7 @@ class Template extends Component {
 	<div className="row" style={{ fontSize: '12px',fontFamily:'Calibri' }}>
   <div className="col-1" />
       <div className="col-2 " ><b>Program Status:</b></div>
-<<<<<<< HEAD
       <div className="col-4 " ><b>{document.additionalData.TransOverallStatus} (Part-Time)</b></div>
-=======
-      <div className="col-4 " ><b>Completed Program(Part-Time)</b></div>
->>>>>>> b4d4564b5be0c091136e713ca683c9d5b9d68ad8
 </div>
 </div>
 
@@ -165,11 +149,7 @@ const renderFooter = p_Cert => (
             <th width="100px" className="text-center"><u>GRADE</u> <br /><u>POINTS</u></th>
           </tr>
           <tr>
-<<<<<<< HEAD
             <td>DIS</td>
-=======
-            <td>DIST</td>
->>>>>>> b4d4564b5be0c091136e713ca683c9d5b9d68ad8
             <td className="text-center">-&nbsp;&nbsp;</td>
             <td>DISTINCTION</td>
             <td className="text-center">4.0</td>
@@ -177,71 +157,43 @@ const renderFooter = p_Cert => (
           <tr>
             <td>A</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-<<<<<<< HEAD
             <td>EXCELLENT (80% - 100%)</td>
-=======
-            <td>EXCELLENT (80%-100%)</td>
->>>>>>> b4d4564b5be0c091136e713ca683c9d5b9d68ad8
             <td className="text-center">4.0</td>
           </tr>
           <tr>
             <td>B+</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-<<<<<<< HEAD
             <td>VERY GOOD (75% - 79%)</td>
-=======
-            <td>VERY GOOD (75%-79%)</td>
->>>>>>> b4d4564b5be0c091136e713ca683c9d5b9d68ad8
             <td className="text-center">3.5</td>
           </tr>
           <tr>
             <td>B</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-<<<<<<< HEAD
             <td>GOOD (70% - 74%)</td>
-=======
-            <td>GOOD (70%-74%)</td>
->>>>>>> b4d4564b5be0c091136e713ca683c9d5b9d68ad8
             <td className="text-center">3.0</td>
           </tr>
           <tr>
             <td>C+</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-<<<<<<< HEAD
             <td>GOOD CREDIT (65% - 69%)</td>
-=======
-            <td>GOOD CREDIT (65%-69%)</td>
->>>>>>> b4d4564b5be0c091136e713ca683c9d5b9d68ad8
             <td className="text-center">2.5</td>
           </tr>
           <tr>
             <td>C</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-<<<<<<< HEAD
             <td>CREDIT (60% - 64%)</td>
-=======
-            <td>CREDIT (60%-64%)</td>
->>>>>>> b4d4564b5be0c091136e713ca683c9d5b9d68ad8
             <td className="text-center">2.0</td>
           </tr>
           <tr>
             <td>D+</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-<<<<<<< HEAD
             <td>GOOD PASS (55% - 59%)</td>
-=======
-            <td>GOOD PASS (55%-59%)</td>
->>>>>>> b4d4564b5be0c091136e713ca683c9d5b9d68ad8
             <td className="text-center">1.5</td>
           </tr>
           <tr>
             <td> D </td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-<<<<<<< HEAD
             <td>PASS (50% - 54%)</td>
-=======
-            <td>PASS (50%-54%)</td>
->>>>>>> b4d4564b5be0c091136e713ca683c9d5b9d68ad8
             <td className="text-center">1.0</td>
           </tr>
           <tr>
@@ -278,21 +230,13 @@ const renderFooter = p_Cert => (
           <tr>
             <td>UP</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-<<<<<<< HEAD
             <td>PASS IN MODULE THAT <br />HAS NO GRADE POINT</td>
-=======
-            <td>PASS IN MODULE WHICH <br />HAS NO GRADE POINT</td>
->>>>>>> b4d4564b5be0c091136e713ca683c9d5b9d68ad8
             <td className="text-center">NA</td>
           </tr>
           <tr>
             <td>UF</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-<<<<<<< HEAD
             <td>FAIL IN MODULE THAT <br /> HAS NO GRADE POINT</td>
-=======
-            <td>FAIL IN MODULE WHICH <br /> HAS NO GRADE POINT</td>
->>>>>>> b4d4564b5be0c091136e713ca683c9d5b9d68ad8
             <td className="text-center">NA</td>
           </tr>
           <tr>
@@ -402,11 +346,7 @@ return (
     <HideTranscriptBanner
       hideTranscript={() => handleObfuscation("transcript")}
     />
-<<<<<<< HEAD
   <div className="container" style={{maxWidth:'1100px', backgroundColor:'rgb(248,248,255)', fontFamily:'Times', fontSize: "1.0rem", borderStyle:'solid', borderColor:'rgb(204,204,170)' }}>
-=======
-  <div className="container" style={{maxWidth:'1100px', backgroundColor:'rgb(255,255,255)', fontFamily:'Times', fontSize: "1.0rem", borderStyle:'solid', borderColor:'rgb(204,204,170)' }}>
->>>>>>> b4d4564b5be0c091136e713ca683c9d5b9d68ad8
     <div className="row">
       {renderHeader(document)}
     </div>
