@@ -95,9 +95,6 @@ return (
   <div className="col-1"></div>
   <div className="col my-5 ml-3 d-flex" style={{fontFamily:'Times', fontSize:'13px'}} >
     {document.recipient.studentId}/{document.additionalData.CertNumber}</div>
-    <div className="col-1"></div>
-  <div className="col my-5 ml-3 d-flex" style={{fontFamily:'Times', fontSize:'13px'}} > 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Issue Date:&nbsp;&nbsp;&nbsp;{format(document.additionalData.Issuance, 'DD/MM/YYYY')}</div>
   </div>
 </div>
 )

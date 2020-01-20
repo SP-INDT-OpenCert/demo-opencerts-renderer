@@ -6,7 +6,6 @@ import HideTranscriptBanner from "../common/HideTranscriptBanner";
 import ObfuscatableValue from "../../../../TemplateCommon/Privacy/ObfuscatableValue";
 import { format } from 'date-fns'
 import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages'
-import scss from "./PACE.format.scss";
 
 class Template extends Component {
   constructor(props) {
@@ -27,7 +26,7 @@ class Template extends Component {
     <div className="col"></div>
     <div className="col my-5 justify-content-centre"><img src={IMG_CERT_SPLOGO} alt="SP Logo" width='200' height='75'/></div>
     </div>
-    <div className="row" style={{ fontSize: '0.68rem',fontFamily:'Calibri' }}>
+    {/*<div className="row" style={{ fontSize: '0.68rem',fontFamily:'Calibri' }}>
     <div className="col-11 text-lg-right" style={{color:'red'}}>
       PROFESSIONAL & ADULT CONTINUING EDUCATION(PACE) ACADEMY<br/>
     </div>
@@ -39,22 +38,22 @@ class Template extends Component {
       tel: (65) 6772 1055 fax: (65) 6772 1957<br/>
       www.sp.edu.sg
 		</div>
-		</div>
-		<div className="row h4 my-4" style={{ fontSize: '13px',fontFamily:'Calibri'}}>
+    </div>*/}
+		<div className="row h4 my-4" style={{ fontSize: '18px',fontFamily:'Calibri'}}>
 		  <div className="col font-weight-bold text-lg-center">
 			ACADEMIC TRANSCRIPT
 		  </div>
 		</div>
 
 <div className="col-15">
-	<div className="row" style={{ fontSize: '12px',fontFamily:'Calibri' }}>
+	<div className="row" style={{ fontSize: '15px',fontFamily:'Calibri' }}>
   <div className="col-1" />
       <div className="col-2 " ><b>Name:</b></div>
       <div className="col-5 " ><b>{p_Cert.recipient.name}</b></div>
 </div>
 </div>
 <div className="col-15">
-	<div className="row" style={{ fontSize: '12px',fontFamily:'Calibri' }}>
+	<div className="row" style={{ fontSize: '15px',fontFamily:'Calibri' }}>
   <div className="col-1" />
       <div className="col-2 " ><b>Student ID:</b></div>
       <div className="col-5 " ><b>{p_Cert.recipient.studentId}</b></div>
@@ -62,7 +61,7 @@ class Template extends Component {
 </div>
 
 <div className="col-15">
-	<div className="row" style={{ fontSize: '12px',fontFamily:'Calibri' }}>
+	<div className="row" style={{ fontSize: '15px',fontFamily:'Calibri' }}>
   <div className="col-1" />
       <div className="col-2 " ><b>Program:</b></div>
       <div className="col-9 " ><b>{p_Cert.name}</b></div>
@@ -70,10 +69,10 @@ class Template extends Component {
 </div>
 
 <div className="col-15">
-	<div className="row" style={{ fontSize: '12px',fontFamily:'Calibri' }}>
+	<div className="row" style={{ fontSize: '15px',fontFamily:'Calibri' }}>
   <div className="col-1" />
       <div className="col-2 " ><b>Program Status:</b></div>
-      <div className="col-4 " ><b>Completed Program(Part-Time)</b></div>
+      <div className="col-4 " ><b>{document.additionalData.TransOverallStatus} (Part-Time)</b></div>
 </div>
 </div>
 
@@ -109,7 +108,7 @@ const renderFooter = p_Cert => (
     <div className="col-1" />
   </div>
 
- <div className="row" style={{fontSize: '12px',fontFamily:'Calibri' }}>
+ <div className="row" style={{fontSize: '15px',fontFamily:'Calibri' }}>
     <div className="col-3 text-center"><b>*Transfer Credit</b></div>
     <div className="col-5"></div>
     <div className="col-3">
@@ -125,7 +124,7 @@ const renderFooter = p_Cert => (
   <div className="col"/>
   </div>
 
-  <div className="row" style={{fontSize: '12px',fontFamily:'Calibri' }}>
+  <div className="row" style={{fontSize: '15px',fontFamily:'Calibri' }}>
   <div className="col-1"></div>
   <div className="col-4"><b>GRADING SYSTEM</b></div>
   </div>
@@ -138,7 +137,7 @@ const renderFooter = p_Cert => (
 </div>*/}
 
   <div className="row" style={{height:'5px'}} ></div>  
-  <div className="row" style={{ fontSize: '12px',fontFamily:'Calibri' }}>
+  <div className="row" style={{ fontSize: '15px',fontFamily:'Calibri' }}>
   <div className="col-1"></div>
     <div className="col-5">
       <table>
@@ -150,7 +149,7 @@ const renderFooter = p_Cert => (
             <th width="100px" className="text-center"><u>GRADE</u> <br /><u>POINTS</u></th>
           </tr>
           <tr>
-            <td>DIST</td>
+            <td>DIS</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
             <td>DISTINCTION</td>
             <td className="text-center">4.0</td>
@@ -158,43 +157,43 @@ const renderFooter = p_Cert => (
           <tr>
             <td>A</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-            <td>EXCELLENT (80%-100%)</td>
+            <td>EXCELLENT (80% - 100%)</td>
             <td className="text-center">4.0</td>
           </tr>
           <tr>
             <td>B+</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-            <td>VERY GOOD (75%-79%)</td>
+            <td>VERY GOOD (75% - 79%)</td>
             <td className="text-center">3.5</td>
           </tr>
           <tr>
             <td>B</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-            <td>GOOD (70%-74%)</td>
+            <td>GOOD (70% - 74%)</td>
             <td className="text-center">3.0</td>
           </tr>
           <tr>
             <td>C+</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-            <td>GOOD CREDIT (65%-69%)</td>
+            <td>GOOD CREDIT (65% - 69%)</td>
             <td className="text-center">2.5</td>
           </tr>
           <tr>
             <td>C</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-            <td>CREDIT (60%-64%)</td>
+            <td>CREDIT (60% - 64%)</td>
             <td className="text-center">2.0</td>
           </tr>
           <tr>
             <td>D+</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-            <td>GOOD PASS (55%-59%)</td>
+            <td>GOOD PASS (55% - 59%)</td>
             <td className="text-center">1.5</td>
           </tr>
           <tr>
             <td> D </td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-            <td>PASS (50%-54%)</td>
+            <td>PASS (50% - 54%)</td>
             <td className="text-center">1.0</td>
           </tr>
           <tr>
@@ -231,13 +230,13 @@ const renderFooter = p_Cert => (
           <tr>
             <td>UP</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-            <td>PASS IN MODULE WHICH <br />HAS NO GRADE POINT</td>
+            <td>PASS IN MODULE THAT <br />HAS NO GRADE POINT</td>
             <td className="text-center">NA</td>
           </tr>
           <tr>
             <td>UF</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-            <td>FAIL IN MODULE WHICH <br /> HAS NO GRADE POINT</td>
+            <td>FAIL IN MODULE THAT <br /> HAS NO GRADE POINT</td>
             <td className="text-center">NA</td>
           </tr>
           <tr>
@@ -265,7 +264,7 @@ const renderFooter = p_Cert => (
 
 const renderEachModule = (p_objMod,iSn) => {
   return (
-  <div className="row" style={{ fontSize: '0.80rem' ,fontFamily:'Calibri'}}>
+  <div className="row" style={{fontSize: '15px',fontFamily:'Calibri'}}>
       <div className="col-1 text-center" style={{minWidth:'80px'}}> {p_objMod.name} </div>
       <div className="col-8 "> {p_objMod.description} </div>
       <div className="col-1 text-center"> {p_objMod.grade} </div>
@@ -300,10 +299,11 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
      <div>
           <div className="row" style={{height:'25px'}} ></div> 
     <div className="row">
-      <div className="col-9">{get(p_ObjTranscript, 'name')} </div>
+      <div className="col-9" style={{fontSize: '15px',fontFamily:'Calibri'}}>
+        {get(p_ObjTranscript, 'name')} </div>
     </div>
 
-    <div className="row" style={{ fontSize: '0.80rem' ,fontFamily:'Calibri'}}>
+    <div className="row" style={{fontSize: '15px',fontFamily:'Calibri'}}>
       <div className="col-1 text-center" style={{minWidth:'80px'}} ><b>Code</b></div>
       <div className="col-8"><b>Module Title</b></div>
       <div className="col-1 text-center"><b>Grade</b></div>
@@ -312,15 +312,15 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
     </div>
     {renderModules}
 
-    <div className="row" style={{ fontSize: '0.80rem',fontFamily:'Calibri'}}>
+    <div className="row" style={{fontSize: '15px',fontFamily:'Calibri'}}>
       <div className="col-3"><b>Semester GPA:</b></div>
       <div className="col"><b>{get(p_ObjTranscript, 'semGPA')}</b></div>
     </div>
-    <div className="row" style={{ fontSize: '0.80rem',fontFamily:'Calibri'}}>
+    <div className="row" style={{fontSize: '15px',fontFamily:'Calibri'}}>
       <div className="col-3"><b>Cumulative GPA:</b></div>
       <div className="col"><b>{get(p_ObjTranscript, 'cumGPA')}</b></div>
     </div>
-    <div className="row" style={{ fontSize: '0.80rem',fontFamily:'Calibri'}}>
+    <div className="row" style={{fontSize: '15px',fontFamily:'Calibri'}}>
       <div className="col-3"><b>{get(p_ObjTranscript, 'description')}</b></div>
       <div className="col"><b>{get(p_ObjTranscript, 'course')}</b></div>
     </div>
@@ -347,7 +347,7 @@ return (
     <HideTranscriptBanner
       hideTranscript={() => handleObfuscation("transcript")}
     />
-  <div className="container" style={{maxWidth:'1100px', backgroundColor:'rgb(255,255,255)', fontFamily:'Times', fontSize: "1.0rem", borderStyle:'solid', borderColor:'rgb(204,204,170)' }}>
+  <div className="container" style={{maxWidth:'1100px', backgroundColor:'rgb(248,248,255)', fontFamily:'Times', fontSize: "1.0rem", borderStyle:'solid', borderColor:'rgb(204,204,170)' }}>
     <div className="row">
       {renderHeader(document)}
     </div>
@@ -355,7 +355,7 @@ return (
     <div className="row" style={{ fontSize: '1.0rem',fontFamily:'Calibri'}}>
       {renderTranscripts}
     </div>
-    <div className="row" style={{ fontSize: '0.80rem',fontFamily:'Calibri'}}>
+    <div className="row" style={{fontSize: '15px',fontFamily:'Calibri'}}>
         <div className="col-3"><b></b></div>
         <div className="col"><b>End of Academic Transcript</b></div>
     </div>

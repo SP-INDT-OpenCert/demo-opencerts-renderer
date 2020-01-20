@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { format } from "date-fns";
 import { get } from "lodash";
 import React from "react";
-import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages'
+import { IMG_CERT_SPLOGO, IMG_CERT_SEAL,IMG_CERT_SEAL_GOLD } from './Certimages'
 
 const Template = ({ document }) => {
 const addOnDisp = get(document,'additionalData.diplomaAddOn').map((txtArr,i) => (
@@ -71,7 +71,7 @@ return (
   <div className="row" style={{height:'100px'}} ></div>
   <div className="row">
 	<div className="col-2"></div>
-    <div className="col-3 mt-0"><img src={IMG_CERT_SEAL} alt="Seal" style={{width:'140px'}} /></div>
+    <div className="col-3 mt-0"><img src={IMG_CERT_SEAL_GOLD} alt="Seal" style={{width:'140px'}} /></div>
 	<div className="col-2"></div>
     <div className="col-4 mt-2">
 	    <div className="text-center"><img src={get(document, 'additionalData.certSignatories[0].signature')} alt="Sign1" style={{width:'160px'}} /></div>
