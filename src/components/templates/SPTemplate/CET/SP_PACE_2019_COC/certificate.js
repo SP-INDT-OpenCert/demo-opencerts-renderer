@@ -27,14 +27,14 @@ return(
   {VarCOCMonth18?
   <div>
     <div className="mt-2 d-flex justify-content-center"	style={{fontFamily:'Times',fontSize:'20px'}} >
-      in </div>
+    {VarCOCMonth18} </div>
     <div className="mt-2 d-flex justify-content-center"	style={{fontFamily:'Times',fontSize:'20px',textAlign:'center'}} >
-    leading to &nbsp;<b>{document.additionalData.diplomaFullDescr} </b></div>
+    <b>{document.additionalData.diplomaFullDescr} </b></div>
   </div>
   :
   <div>
   <div className="mt-2 d-flex justify-content-center"	style={{fontFamily:'Times',fontSize:'20px',textAlign:'center'}} >
-      in </div>
+  {VarCOCMonth12} </div>
   <div className="mt-2 d-flex justify-content-center"	style={{fontFamily:'Times',fontSize:'20px',textAlign:'center'}} >
   <b>{document.additionalData.diplomaFullDescr} </b></div>
   </div>

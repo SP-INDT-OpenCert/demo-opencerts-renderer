@@ -60,7 +60,7 @@ return (
   </div>
   
   <div className="mt-2 d-flex justify-content-center" style={{fontFamily:'Gill Sans,Gill Sans MT,Calibri,sans-serif',fontSize:'21px',textAlign:'center'}}>
-    Leading to the </div>
+    leading to the </div>
 
   <div className="mt-2 d-flex justify-content-center"	style={{fontFamily:'Gill Sans,Gill Sans MT,Calibri,sans-serif',fontSize:'24px',textAlign:'center'}} > 
   {document.additionalData.diplomaFullDescr} </div>

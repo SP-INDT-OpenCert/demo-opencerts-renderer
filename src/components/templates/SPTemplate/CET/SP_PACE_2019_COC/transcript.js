@@ -49,7 +49,7 @@ class Template extends Component {
 	<div className="row" style={{ fontSize: '15px',fontFamily:'Calibri' }}>
   <div className="col-1" />
       <div className="col-2 " ><b>Name:</b></div>
-      <div className="col-5 " ><b>{p_Cert.recipient.name}</b></div>
+      <div className="col-5 " style={{textTransform: 'uppercase'}}><b>{p_Cert.recipient.name}</b></div>
 </div>
 </div>
 <div className="col-15">
