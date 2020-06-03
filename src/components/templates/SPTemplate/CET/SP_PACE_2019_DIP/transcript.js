@@ -210,10 +210,10 @@ const renderFooter = p_Cert => (
       <table>
         <tbody className="align-top">
           <tr>
-            <th width="70px"><u>GRAD</u>&nbsp;</th>
+            <th width="70px"><u>GRADE</u>&nbsp;</th>
             <td width="25px" className="text-center">&nbsp;&nbsp;&nbsp;</td>
             <th width="200px"><u>GRADE DESCRIPTION</u></th>
-            <th width="100px" className="text-center"><u>GRADE</u> <br /><u>POINT</u></th>
+            <th width="100px" className="text-center"><u>GRADE</u> <br /><u>POINTS</u></th>
           </tr>
           <tr>
             <td>P</td>
