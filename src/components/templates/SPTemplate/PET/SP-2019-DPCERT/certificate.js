@@ -48,7 +48,7 @@ return (
     <div className="col"></div></div>
   <div className="h5 mt-4 d-flex justify-content-center"
 	style={{fontFamily:'Times'}} >
-    having successfully completed the course of study, was awarded the</div>
+    having successfully completed the course of study was awarded the:</div>
   <div className="h5 mt-3 d-flex justify-content-center"
 	style={{fontFamily:'Times'}} >
     {document.additionalData.diplomaFullDescr} </div>
