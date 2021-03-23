@@ -58,7 +58,7 @@ return (
 	style={{fontFamily:'Times'}} > on </div>
     <div className="col-3">
 	  <div className="h5 mt-3 mb-0 d-flex justify-content-center"
-		style={{fontFamily:'Monotype Corsiva,Georgia italic'}} >
+		style={{fontFamily:'Georgia italic'}} >
 		{format(document.graduationDate, 'D MMMM YYYY')} </div>
 	  <div className="row my-0">
         <div className="col" style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
