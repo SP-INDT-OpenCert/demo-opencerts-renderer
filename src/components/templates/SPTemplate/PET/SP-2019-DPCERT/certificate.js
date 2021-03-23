@@ -48,7 +48,7 @@ return (
     <div className="col"></div></div>
   <div className="h5 mt-4 d-flex justify-content-center"
 	style={{fontFamily:'Times'}} >
-    having successfully completed the course of study, was awarded the</div>
+    having successfully completed the course of study was awarded the</div>
   <div className="h5 mt-3 d-flex justify-content-center"
 	style={{fontFamily:'Times'}} >
     {document.additionalData.diplomaFullDescr} </div>
@@ -57,7 +57,7 @@ return (
     <div className="col-1 h5 mt-4 d-flex justify-content-center"
 	style={{fontFamily:'Times'}} > on </div>
     <div className="col-3">
-	  <div className="h5 mt-3 mb-0 d-flex justify-content-center"
+	  <div className="h5 mt-3 mb-0 d-flex justify-content-center font-italic"
 		style={{fontFamily:'Georgia italic'}} >
 		{format(document.graduationDate, 'D MMMM YYYY')} </div>
 	  <div className="row my-0">
