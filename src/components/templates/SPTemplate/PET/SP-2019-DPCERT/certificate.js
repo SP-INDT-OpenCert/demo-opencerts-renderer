@@ -39,8 +39,8 @@ return (
   <div className="h5 mt-4 d-flex justify-content-center"
     style={{fontFamily:'Times'}}>
     It is hereby certified that</div>
-  <div className="h3 mt-4 mb-0 justify-content-center d-flex"
-	style={{fontFamily:'Monotype Corsiva,Garamond'}} >
+  <div className="h5 mt-4 mb-0 justify-content-center font-weight-bold font-italic d-flex"
+	style={{fontFamily:'Georgia italic'}} >
 	{document.recipient.name} </div>
 
   <div className="row my-0"><div className="col"></div>
@@ -48,7 +48,7 @@ return (
     <div className="col"></div></div>
   <div className="h5 mt-4 d-flex justify-content-center"
 	style={{fontFamily:'Times'}} >
-    having successfully completed the course of study was awarded the</div>
+    having successfully completed the course of study, was awarded the</div>
   <div className="h5 mt-3 d-flex justify-content-center"
 	style={{fontFamily:'Times'}} >
     {document.additionalData.diplomaFullDescr} </div>
@@ -57,8 +57,8 @@ return (
     <div className="col-1 h5 mt-4 d-flex justify-content-center"
 	style={{fontFamily:'Times'}} > on </div>
     <div className="col-3">
-	  <div className="h4 mt-3 mb-0 d-flex justify-content-center"
-		style={{fontFamily:'Monotype Corsiva,Garamond'}} >
+	  <div className="h5 mt-3 mb-0 d-flex justify-content-center"
+		style={{fontFamily:'Monotype Corsiva,Georgia italic'}} >
 		{format(document.graduationDate, 'D MMMM YYYY')} </div>
 	  <div className="row my-0">
         <div className="col" style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
