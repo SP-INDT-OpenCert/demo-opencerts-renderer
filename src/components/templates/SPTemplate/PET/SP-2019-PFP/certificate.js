@@ -39,8 +39,8 @@ return (
   <div className="h5 mt-4 d-flex justify-content-center"
     style={{fontFamily:'Times'}}>
     It is hereby certified that</div>
-  <div className="h3 mt-4 mb-0 justify-content-center d-flex"
-	style={{fontFamily:'Monotype Corsiva,Garamond'}} >
+  <div className="h5 mt-4 mb-0 justify-content-center font-weight-bold font-italic d-flex"
+	style={{fontFamily:'Georgia italic'}} >
 	{document.recipient.name} </div>
 
   <div className="row my-0"><div className="col"></div>
