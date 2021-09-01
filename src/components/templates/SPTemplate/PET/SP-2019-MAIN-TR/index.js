@@ -9,7 +9,7 @@ const templates = [
   },
   {
     id: 'transcript',
-    label: 'TranscriptTST',
+    label: 'TranscriptTST2',
     template: SPTranscript
   }
 ];
