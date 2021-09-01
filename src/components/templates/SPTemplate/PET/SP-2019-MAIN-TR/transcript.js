@@ -196,19 +196,6 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
       </div>
 	  )
     ) : "";
-  const objEFWcerts = get(p_ObjTranscript, 'EFWcerts');
-  const dispEFWcerts = objEFWcerts ? objOthItems.map((objItem,i) => (
-      <div className="row">
-        <div className="col-11" ><u>CERTIFICATE AWARDED</u></div> <div className="col" />
-      </div>
-      <div className="row">
-        <div className="col-11" > {objItem.name } </div> <div className="col" />
-      </div>
-      <div className="row">
-        <div className="col-11" > {objItem.modList } </div> <div className="col" />
-      </div>
-	  )
-    ) : "";
   const objModules = get(p_ObjTranscript, 'modules');
   const renderModules = objModules.map((objMod,i) => (
     <div>
@@ -240,7 +227,6 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
       <div className="col" />
     </div>
     {renderModules}
-    {dispEFWcerts}
     <div className="row">
       <div className="col mt-3">{get(p_ObjTranscript, 'description')} </div>
     </div>
