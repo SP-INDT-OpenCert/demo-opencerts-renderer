@@ -241,7 +241,7 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
       <div className="col" />
     </div>
     {renderModules}
-    {dispEFWcert}
+    {dispEFWcerts}
     <div className="row">
       <div className="col mt-3">{get(p_ObjTranscript, 'description')} </div>
     </div>
