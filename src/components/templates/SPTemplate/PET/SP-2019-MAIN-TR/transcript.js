@@ -186,7 +186,6 @@ const renderEachModule = (p_objMod,iSn) => {
 const renderTermTranscript = (p_ObjTranscript,iSn) => {
   //var xs = get(p_ObjTranscript, 'name')
   //ok: var xs = p_ObjTranscript.Xname
-
   const objOthItems = get(p_ObjTranscript, 'otherItems');
   // ok: const xoth = get(p_ObjTranscript, 'otherItems[0].name');
   const dispOthItems = objOthItems ? objOthItems.map((objItem,i) => (
@@ -228,7 +227,6 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
       <div className="col" />
     </div>
     {renderModules}
-    {dispEFWcerts}
     <div className="row">
       <div className="col mt-3">{get(p_ObjTranscript, 'description')} </div>
     </div>
