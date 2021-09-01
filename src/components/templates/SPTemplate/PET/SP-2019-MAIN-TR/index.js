@@ -4,12 +4,12 @@ import SPTranscript from './transcript';
 const templates = [
   {
     id: 'certificate',
-    label: 'Certificate',
+    label: 'CertificateTST',
     template: SPCertificate
   },
   {
     id: 'transcript',
-    label: 'Transcript',
+    label: 'TranscriptTST',
     template: SPTranscript
   }
 ];
