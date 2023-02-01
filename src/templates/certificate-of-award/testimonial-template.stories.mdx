@@ -1,0 +1,21 @@
+import { Meta, Preview, Props, Description, Story } from "@storybook/addon-docs/blocks";
+import { CertificateOfAwardTemplate } from "./certificate-of-award-template";
+import { customCertificateOfAward } from "../samples";
+
+<Meta title="MDX|CertificateOfAwardTemplate" component={CertificateOfAwardTemplate} />
+
+# CertificateOfAwardTemplate component
+
+<Description of={CertificateOfAwardTemplate} />
+
+# Props
+
+<Props of={CertificateOfAwardTemplate} />
+
+# Usage
+
+<Preview withSource>
+  <Story name="basic sample">
+    <CertificateOfAwardTemplate document={customCertificateOfAward} />
+  </Story>
+</Preview>

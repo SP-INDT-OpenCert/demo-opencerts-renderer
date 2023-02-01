@@ -1,39 +1,89 @@
-[![Build Status](https://travis-ci.org/TradeTrust/document-renderer.svg?branch=master)](https://travis-ci.org/TradeTrust/document-renderer)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TradeTrust_document-renderer&metric=alert_status)](https://sonarcloud.io/dashboard?id=TradeTrust_document-renderer)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=TradeTrust_document-renderer&metric=coverage)](https://sonarcloud.io/dashboard?id=TradeTrust_document-renderer)
+# decentralized-renderer-react-template
 
-# Decentralised Document Renderer
+React boilerplate to write decentralize renderer.
 
-The project allow you to run your own document renderer compatible with the OpenAttestation standards. To customise the look and feel of your document, you may style a template to render it, host a copy of this renderer and then point your document to render with the hosted renderer. 
+## Install
 
-# Running the renderer
+The easiest way to use **decentralized-renderer-react-template** is through github by clicking on `Use this template` button in the repository page.
 
-`npm start`
+You can also download or `git clone` this repo
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```sh
+$ git clone https://github.com/Open-Attestation/decentralized-renderer-react-template.git my-module
+$ cd my-module
+$ rm -rf .git
+$ npm install
+```
 
-You will notice a blank page. This is normal as the renderer does not render anything until a document object is passed into it. 
+Make sure to edit the following files according to your module's info:
 
-To see the render in action, you may embed it in an iframe and use postMessage to interact with it. 
+- package.json (module name and version)
+- README.md
+- LICENSE
+- add your own template (in `src/templates` folder) and configure correctly the template registry (in `src/templates/index.tsx` file)
 
-A sample iframe html file is included in `test/index.html` to help you test your renderer.
+## Commands
 
-# Styling your document
+```sh
+$ npm run storybook # open storybook and start editing your components
+$ npm run storybook:build # generate docs
+$ npm run test:watch # run tests with Jest
+$ npm run test:coverage # run tests with coverage
+$ npm run lint # lint code
+$ npm run build # build component
+```
 
-The templates are defined in `src/templates`. 
+## Setting up CI with automatic semantic-release versioning
 
-## Basic styling
+Generate CircleCI API token and run:
 
-If you are only rendering one type of document, you may style the default template at `src/templates/default/template.js`. 
+```sh
+$ npx semantic-release-cli setup --ask-for-passwords`
+```
 
-## Multiple document templates
+You will need to provide credentials for github and npm.
 
-If the renderer is meant to render more than one template, it will be differentiated by the document template name. The name of the template to render should correspond to the keys in `src/components/templates/index.js`.
+## Code organization and development
 
-# Deploying the site
+- `index.ts` contains the logic to communicate with the host embedding your renderer. You probably will _never_ need to update that file.
+- template registry configuration is located in `src/templates/index.tsx`
+- templates are located in `src/templates` folder. You can add as many template as you want and structure the code the way you want
+- documents samples contains fake data to test the templates you build. You can create a typescript interface to make sure that your template uses the correct expected document
+  - create a type describing the kind of document you expect to render (for instance check `CustomTemplateCertificate` in `src/sample.tsx`)
+  - create a template consuming that interface, using the `TemplateProps` helper from `@govtechsg/decentralized-renderer-react-components (for instance check the template in`src/templates/customTemplate/customTemplate.tsx`)
+- shared components are located in `src/core` folder. For instance you can find a watermark example that will be displayed when printing the document
+- feel free to remove whatever you dont need
 
-`npm run build`
+## Features
 
-Builds the site into a static site.<br>
-You may serve the site from the `build` folder.
+- [**React**](http://reactjs.org/) - A JavaScript library for building user interfaces.
+- [**Webpack**](https://webpack.js.org/) - Component bundler.
+- [**React testing library**](https://testing-library.com/) - Simple and complete testing utilities that encourage good testing practices.
+- [**Emotion**](https://emotion.sh/) - Library designed for writing css styles with JavaScript.
+- [**Babel**](https://babeljs.io/) - Write next generation JavaScript today.
+- [**Jest**](https://facebook.github.io/jest) - JavaScript testing framework used by Facebook.
+- [**ESLint**](http://eslint.org/) - Make sure you are writing a quality code.
+- [**Prettier**](https://prettier.io/) - Enforces a consistent style by parsing your code and re-printing it.
+- [**Typescript**](https://www.typescriptlang.org/) - JavaScript superset, providing optional static typing
+- [**Circle CI**](https://circleci.com/) - Automate tests and linting for every push or pull request.
+- [**Storybook**](https://storybook.js.org/) - Tool for developing UI components in isolation with documentation.
+- [**Semantic Release**](https://semantic-release.gitbook.io/semantic-release/) - Fully automated version management and package publishing.
+- [**Debug**](https://github.com/visionmedia/debug) - JS debugging utility that works both in node.js and browsers.
+
+## Changing stuff
+
+### Removing Emotion
+
+- Uninstall npm packages
+
+```sh
+$ npm uninstall @emotion/core @emotion/styled @emotion/babel-preset-css-prop
+```
+
+- Remove `@emotion/babel-preset-css-prop` from Babel presets (configuration is made in package.json file)
+- Remove `@emotion/core` from Typescript configuration (in tsconfig.json file)
+- Remove `.storybook/webpack.config.js` (file created only for emotion css property support in storybook)
+
+## License
+
+GPL-3.0

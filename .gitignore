@@ -1,7 +1,11 @@
-# Files and folders
-node_modules/
-build/
-coverage/
-
-# Rubbish
+node_modules
+yarn-error.log
 .DS_Store
+out
+.coverage
+bundles/
+yarn.lock
+.scannerwork
+dist
+*.iml
+.idea

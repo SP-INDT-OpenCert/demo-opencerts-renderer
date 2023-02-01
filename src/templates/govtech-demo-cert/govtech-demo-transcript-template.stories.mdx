@@ -1,0 +1,22 @@
+import { Meta, Preview, Props, Description, Story } from "@storybook/addon-docs/blocks";
+import { TranscriptTemplate } from "./transcript";
+import { customTemplateCertificate } from "../samples";
+import { action } from "@storybook/addon-actions";
+
+<Meta title="MDX|TranscriptTemplate" component={TranscriptTemplate} />
+
+# TranscriptTemplate component
+
+<Description of={TranscriptTemplate} />
+
+# Props
+
+<Props of={TranscriptTemplate} />
+
+# Usage
+
+<Preview withSource>
+  <Story name="basic sample">
+    <TranscriptTemplate document={customTemplateCertificate} handleObfuscation={action("handleObfuscation")} />
+  </Story>
+</Preview>

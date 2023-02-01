@@ -1,67 +1,185 @@
 {
-  "name": "oa-doc",
-  "version": "0.1.0",
+  "name": "opencerts-demo-decentralized-renderer",
+  "version": "0.0.0-development",
   "private": true,
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.22",
-    "@fortawesome/free-solid-svg-icons": "^5.9.0",
-    "@fortawesome/react-fontawesome": "^0.1.4",
-    "@govtechsg/open-attestation": "^1.1.39",
+    "@emotion/core": "10.0.27",
+    "@emotion/styled": "10.0.27",
+    "@govtechsg/decentralized-renderer-react-components": "2.0.3",
+    "@hot-loader/react-dom": "16.10.2",
     "bootstrap": "^4.3.1",
     "date-fns": "^1.30.1",
+    "debug": "4.1.1",
     "lodash": "^4.17.15",
     "moment-timezone": "^0.5.26",
-    "node-sass": "^4.12.0",
-    "penpal": "4.1.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-pdf": "^4.1.0",
-    "react-scripts": "3.0.1"
+    "react": "16.10.2",
+    "react-dom": "16.10.2",
+    "react-hot-loader": "4.12.19"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --testPathPattern=\\.test.js$",
-    "serve-static": "http-server build -s -p 3000",
-    "test-coverage": "npm run test -- --coverage --watchAll=false",
-    "integration": "testcafe chrome src/**/*.spec.js",
-    "integration:headless": "testcafe chrome:headless src/**/*.spec.js",
-    "eject": "react-scripts eject",
-    "lint": "eslint . --ext .js --max-warnings 0",
-    "lint:fix": "eslint . --ext .js --fix"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "build": "NODE_ENV=production webpack --progress --mode production",
+    "dev": "NODE_ENV=development webpack-dev-server",
+    "lint": "eslint . --ext .ts,.tsx,.mdx --max-warnings 0",
+    "lint:fix": "npm run lint -- --fix",
+    "storybook": "start-storybook -p 6006 -s .",
+    "storybook:build": "build-storybook -o docs",
+    "test": "jest --ci",
+    "test:coverage": "npm run test -- --coverage",
+    "test:watch": "npm run test -- --watch",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
-    "babel-plugin-dynamic-import-webpack": "^1.1.0",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-jest": "^22.15.2",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.3",
-    "http-server": "^0.11.1",
-    "prettier": "^1.18.2",
-    "react-test-renderer": "^16.9.0",
-    "sinon": "^7.4.1",
-    "testcafe": "^1.4.1"
+    "@babel/core": "7.8.4",
+    "@babel/preset-env": "7.8.4",
+    "@babel/preset-react": "7.8.3",
+    "@babel/preset-typescript": "7.8.3",
+    "@emotion/babel-preset-css-prop": "10.0.27",
+    "@storybook/addon-actions": "5.3.9",
+    "@storybook/addon-docs": "5.3.9",
+    "@storybook/addons": "5.3.9",
+    "@storybook/react": "5.3.9",
+    "@testing-library/react": "9.4.0",
+    "@types/debug": "4.1.5",
+    "@types/jest": "25.1.1",
+    "@types/lodash": "^4.14.149",
+    "@types/moment-timezone": "^0.5.12",
+    "@types/react": "16.9.19",
+    "@typescript-eslint/eslint-plugin": "2.18.0",
+    "@typescript-eslint/parser": "2.18.0",
+    "babel-jest": "25.1.0",
+    "babel-loader": "8.0.6",
+    "brotli-webpack-plugin": "1.1.0",
+    "compression-webpack-plugin": "3.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "3.4.2",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-jest": "23.6.0",
+    "eslint-plugin-mdx": "1.6.8",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-react": "7.18.0",
+    "eslint-plugin-react-hooks": "2.3.0",
+    "file-loader": "5.0.2",
+    "html-webpack-plugin": "3.2.0",
+    "jest": "25.1.0",
+    "prettier": "1.19.1",
+    "react-docgen-typescript-loader": "3.6.0",
+    "semantic-release": "17.0.1",
+    "style-loader": "1.1.3",
+    "typescript": "3.7.5",
+    "webpack": "4.41.5",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.10.1"
+  },
+  "license": "GPL-3.0",
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "@babel/preset-typescript",
+      "@babel/preset-react",
+      "@emotion/babel-preset-css-prop"
+    ]
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Opera versions",
+    "last 2 Firefox versions",
+    "last 2 Edge versions",
+    "last 1 Safari version",
+    "IE >= 11"
+  ],
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "env": {
+      "browser": true,
+      "jest": true
+    },
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/recommended",
+      "plugin:jest/all",
+      "plugin:prettier/recommended",
+      "plugin:mdx/recommended",
+      "prettier/@typescript-eslint",
+      "prettier/react"
+    ],
+    "plugins": [
+      "react-hooks"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "rules": {
+      "@typescript-eslint/explicit-function-return-type": [
+        "warn",
+        {
+          "allowExpressions": true,
+          "allowTypedFunctionExpressions": true
+        }
+      ],
+      "@typescript-eslint/no-explicit-any": "off",
+      "react/prop-types": "off",
+      "react/self-closing-comp": "error",
+      "jest/prefer-expect-assertions": "off",
+      "array-callback-return": "error",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "error"
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.md"
+        ],
+        "rules": {
+          "prettier/prettier": [
+            2,
+            {
+              "parser": "markdown"
+            }
+          ]
+        }
+      },
+      {
+        "files": [
+          "*.mdx"
+        ],
+        "extends": [
+          "plugin:mdx/overrides"
+        ]
+      }
+    ]
+  },
+  "jest": {
+    "coverageDirectory": "coverage",
+    "moduleNameMapper": {
+      "\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/fileMock.js"
+    }
+  },
+  "prettier": {
+    "printWidth": 120
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenCerts/demo-opencerts-renderer.git"
   }
 }
