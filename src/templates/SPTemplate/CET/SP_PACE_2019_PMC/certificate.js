@@ -3,7 +3,7 @@ import { format } from "date-fns";
 import { get } from "lodash";
 import React from "react";
 import { IMG_CERT_SPLOGO, IMG_CERT_PACELOGO} from './Certimages'
-import { transform } from "@babel/core";
+// import { transform } from "@babel/core";
 
 const Template = ({ document }) => {
 
