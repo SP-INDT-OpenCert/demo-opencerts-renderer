@@ -5,7 +5,7 @@ import { templates as mainTR } from "./SPTemplate/PET/SP-2019-MAIN-TR";
 import { TemplateRegistry } from "@govtechsg/decentralized-renderer-react-components";
 
 export const registry: TemplateRegistry<any> = {
-  default: govtechDemoTemplates,
+  default: mainTR,
   GOVTECH_DEMO: govtechDemoTemplates,
   TESTIMONIALS: testimonialsTemplates,
   TESTIMONIALS2: testimonialsTemplates2,
