@@ -11,6 +11,6 @@ export const registry: TemplateRegistry<any> = {
   TESTIMONIALS: testimonialsTemplates,
   TESTIMONIALS2: testimonialsTemplates2,
   CERTIFICATE_OF_AWARD: certificateOfAwardTemplates,
-  SP_2019_MAIN_TR: sp2019mainTemplate,
+  SP_2019_MAIN: sp2019mainTemplate,
   SP_2019_MAIN_TR: sp2019mainTRTemplate
 };
