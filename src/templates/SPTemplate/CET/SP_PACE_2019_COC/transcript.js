@@ -3,7 +3,7 @@ import * as react from "react";
 import { get } from "lodash";
 import PropTypes from "prop-types";
 import HideTranscriptBanner from "../common/HideTranscriptBanner";
-import ObfuscatableValue from "../../../../TemplateCommon/Privacy/ObfuscatableValue";
+import ObfuscatableValue from "@govtechsg/decentralized-renderer-react-components";
 import { format } from 'date-fns'
 import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages'
 
@@ -49,7 +49,7 @@ class Template extends Component {
 	<div className="row" style={{ fontSize: '15px',fontFamily:'Calibri' }}>
   <div className="col-1" />
       <div className="col-2 " ><b>Name:</b></div>
-      <div className="col-5 " style={{textTransform: 'uppercase'}}  ><b>{p_Cert.recipient.name}</b></div>
+      <div className="col-5 " style={{textTransform: 'uppercase'}}><b>{p_Cert.recipient.name}</b></div>
 </div>
 </div>
 <div className="col-15">

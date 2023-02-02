@@ -3,7 +3,7 @@ import * as react from "react";
 import { get } from "lodash";
 import PropTypes from "prop-types";
 import HideTranscriptBanner from "../common/HideTranscriptBanner";
-import ObfuscatableValue from "../../../../TemplateCommon/Privacy/ObfuscatableValue";
+import ObfuscatableValue from "@govtechsg/decentralized-renderer-react-components";
 import { format } from 'date-fns'
 import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages'
 
@@ -230,13 +230,13 @@ const renderFooter = p_Cert => (
           <tr>
             <td>UP</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-            <td>PASS IN MODULE THAT <br />HAS NO GRADE POINT</td>
+            <td>PASS IN A MODULE THAT <br />HAS NO GRADE POINT</td>
             <td className="text-center">NA</td>
           </tr>
           <tr>
             <td>UF</td>
             <td className="text-center">-&nbsp;&nbsp;</td>
-            <td>FAIL IN MODULE THAT <br /> HAS NO GRADE POINT</td>
+            <td>FAIL IN A MODULE THAT <br /> HAS NO GRADE POINT</td>
             <td className="text-center">NA</td>
           </tr>
           <tr>

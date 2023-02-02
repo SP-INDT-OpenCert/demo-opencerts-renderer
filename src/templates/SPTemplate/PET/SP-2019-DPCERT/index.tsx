@@ -1,17 +1,16 @@
 import SPCertificate from './certificate';
 import SPTranscript from './transcript';
 
-const templates = [
+export const templates = [
   {
     id: 'certificate',
-    label: 'CertificateTST',
+    label: 'Certificate',
     template: SPCertificate
   },
   {
     id: 'transcript',
-    label: 'TranscriptTST',
+    label: 'Transcript',
     template: SPTranscript
   }
 ];
 
-export default templates;

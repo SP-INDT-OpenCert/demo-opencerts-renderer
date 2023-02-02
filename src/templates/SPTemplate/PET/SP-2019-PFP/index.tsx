@@ -1,6 +1,6 @@
 import SPCertificate from './certificate';
 
-const templates = [
+export const templates = [
   {
     id: 'certificate',
     label: 'Certificate',
@@ -8,4 +8,4 @@ const templates = [
   }
 ];
 
-export default templates;
+

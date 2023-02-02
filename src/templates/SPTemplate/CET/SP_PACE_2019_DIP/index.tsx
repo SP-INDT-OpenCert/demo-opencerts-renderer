@@ -1,7 +1,7 @@
 import SPPACECertificate from './certificate';
 import SPPACETranscript from './transcript';
 
-const templates = [
+export const templates = [
   {
     id: 'certificate',
     label: 'Certificate',
@@ -14,4 +14,3 @@ const templates = [
   }
 ];
 
-export default templates;
