@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { format } from "date-fns";
 import { get } from "lodash";
 import React from "react";
-import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from "./Certimages";
+import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages'
 
 const Template = ({ document }) => {
 const addOnDisp = get(document,'additionalData.diplomaAddOn').map((txtArr,i) => (
