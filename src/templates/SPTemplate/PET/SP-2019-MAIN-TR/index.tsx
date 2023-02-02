@@ -1,4 +1,4 @@
-import { SPCertificate } from "./certificate";
+import SPCertificate from "./certificate";
 import SPTranscript from "./transcript";
 
 const templates = [
