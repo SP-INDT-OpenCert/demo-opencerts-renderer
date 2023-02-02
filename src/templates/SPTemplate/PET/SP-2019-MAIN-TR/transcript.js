@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { get } from "lodash";
 import PropTypes from "prop-types";
 import HideTranscriptBanner from "../common/HideTranscriptBanner";
-import ObfuscatableValue from "../../../../TemplateCommon/Privacy/ObfuscatableValue";
+import ObfuscatableValue from "@govtechsg/decentralized-renderer-react-components";
 import { format } from 'date-fns'
 
 class Template extends Component {
