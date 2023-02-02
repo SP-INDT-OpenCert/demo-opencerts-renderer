@@ -2,8 +2,8 @@ import SPCertificate from "./certificate";
 
 const templates = [
   {
-    id: 'certificate',
-    label: 'CertificateTST',
+    id: "certificate",
+    label: "CertificateTST",
     template: SPCertificate
   }
 ];
