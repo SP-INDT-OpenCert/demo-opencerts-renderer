@@ -1,10 +1,10 @@
-import SPCertificate from "./certificate";
+import SPCertificate from './certificate';
 import SPTranscript from './transcript';
 
 export const templates = [
   {
-    id: "certificate",
-    label: "CertificateTST",
+    id: 'certificate',
+    label: 'CertificateTST',
     template: SPCertificate
   },
   {
