@@ -213,9 +213,9 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
       <div className="row">
         <div className="col-11 mt-2" > <u>CERTIFICATE AWARDED debugs</u> </div> <div className="col" />
       </div>
-	  {dispEFWcertsItem}
+	  {/* dispEFWcertsItem */}
      </div>
-  ) : "";
+    ) : "";
 
   // Minor of the diploma
   const objMinors = get(p_ObjTranscript, 'Minors');
