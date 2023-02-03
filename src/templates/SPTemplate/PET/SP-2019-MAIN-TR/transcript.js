@@ -199,17 +199,17 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
 
   //Elective framework Cert
   const objEFWcerts = get(p_ObjTranscript, 'EFWcerts');
-  const dispEFWcertItems = objEFWcerts.map((objItm,i) => (
-     <div>
-      <div className="row">
-        <div className="col-11" > {objItm.name } </div> <div className="col" />
-      </div>
-      <div className="row">
-        <div className="col-11" > {objItm.modList } </div> <div className="col" />
-      </div>
-	 </div>
-	  )
-    );
+//  const dispEFWcertItems = objEFWcerts.map((objItm,i) => (
+//     <div>
+//      <div className="row">
+//        <div className="col-11" > {objItm.name } </div> <div className="col" />
+//      </div>
+//      <div className="row">
+//        <div className="col-11" > {objItm.modList } </div> <div className="col" />
+//      </div>
+//	 </div>
+//	  )
+//    );
   const dispEFWcerts = objEFWcerts ? (
      <div>
       <div className="row">
