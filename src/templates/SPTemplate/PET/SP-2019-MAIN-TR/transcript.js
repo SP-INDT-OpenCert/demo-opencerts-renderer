@@ -199,13 +199,7 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
 
   //Elective framework Cert
   const objEFWcerts = get(p_ObjTranscript, 'EFWcerts');
-  const dispEFWcerts = objEFWcerts ? 
-   (<div>
-      <div className="row">
-        <div className="col-11 mt-2" > <u>CERTIFICATE AWARDED debugs</u> </div> <div className="col" />
-      </div>)
-   objEFWcerts.map((objItm,i) => (
-     
+  const dispEFWcertsItem = objEFWcerts.map((objItm,i) => (
       <div className="row">
         <div className="col-11" > {objItm.name } </div> <div className="col" />
       </div>
@@ -213,8 +207,15 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
         <div className="col-11" > {objItm.modList } </div> <div className="col" />
       </div>
 	  )
-    )
-	(</div>) : "";
+    );
+  const dispEFWcerts = objEFWcerts ? (
+     <div>
+      <div className="row">
+        <div className="col-11 mt-2" > <u>CERTIFICATE AWARDED debugs</u> </div> <div className="col" />
+      </div>
+	  {dispEFWcertsItem}
+     </div>
+  ) : "";
 
   // Minor of the diploma
   const objMinors = get(p_ObjTranscript, 'Minors');
