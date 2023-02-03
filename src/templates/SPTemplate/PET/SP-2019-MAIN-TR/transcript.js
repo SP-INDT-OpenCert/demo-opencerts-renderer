@@ -211,7 +211,7 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
 	  )
     );
   const dispEFWcerts = objEFWcerts ? (
-     <div>
+     <div className="container">
       <div className="row">
         <div className="col-11 mt-2" > <u>CERTIFICATE AWARDED debugs</u> </div> <div className="col" />
       </div>
