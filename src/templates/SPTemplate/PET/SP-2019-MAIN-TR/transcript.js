@@ -210,15 +210,18 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
 //   </div>
 //	  )
 //  );
-  const dispEFWcerts = objEFWcerts ? objEFWcerts.map((objItm,i) => (
-     <div>
-	  {
-	  if(i == 1) ? (
+
+  const dispEFWCaption = (iSn) => {
+	  (i == 1) ? (
       <div className="row">
         <div className="col-11 mt-2" > <u>CERTIFICATE(S) AWARDED</u> </div> <div className="col" />
       </div> 
 	  ) : ""
-	  }
+  }
+
+  const dispEFWcerts = objEFWcerts ? objEFWcerts.map((objItm,i) => (
+     <div>
+	  {dispEFWCaption(i)}
 //    {dispEFWcertItems}
       <div className="row">
         <div className="col-11" > {objItm.name } </div> <div className="col" />
