@@ -207,10 +207,10 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
       </div> 
 	  ) : ""}
       <div className="row">
-        <div className="col-11" > {objItm.name } </div> <div className="col" />
+        <div className="col-11 mt-0 mb-0" > {objItm.name } </div> <div className="col" />
       </div>
       <div className="row">
-        <div className="col-11" > {objItm.modList } </div> <div className="col" />
+        <div className="col-11 mt-0 mb-0" > {objItm.modList } </div> <div className="col" />
       </div>
      </div>
 	  )
