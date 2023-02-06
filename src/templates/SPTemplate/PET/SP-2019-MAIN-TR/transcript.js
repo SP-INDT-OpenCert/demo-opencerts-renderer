@@ -206,10 +206,10 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
         <div className="col-11 mt-2" > <u>CERTIFICATE AWARDED</u> </div> <div className="col" />
       </div> 
 	  ) : ""}
-      <div className="row">
+      <div className="row no-gutters">
         <div className="col-11 mt-0 mb-0" > {objItm.name } </div> <div className="col mt-0 mb-0" />
       </div>
-      <div className="row">
+      <div className="row no-gutters">
         <div className="col-11 mt-0 mb-0" > {objItm.modList } </div> <div className="col mt-0 mb-0" />
       </div>
      </div>
