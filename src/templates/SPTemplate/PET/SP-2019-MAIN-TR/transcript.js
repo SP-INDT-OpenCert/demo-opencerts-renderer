@@ -213,7 +213,7 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
   const dispEFWcerts = objEFWcerts ? objEFWcerts.map((objItm,i) => (
      <div>
 	  {
-	  (i == 1) ? (
+	  if(i == 1) ? (
       <div className="row">
         <div className="col-11 mt-2" > <u>CERTIFICATE(S) AWARDED</u> </div> <div className="col" />
       </div> 
