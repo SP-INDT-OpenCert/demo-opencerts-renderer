@@ -202,7 +202,6 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
 
   const dispEFWcerts = objEFWcerts ? objEFWcerts.map((objItm,i) => (
      <div>
-     // {dispEFWCaption(i)}
 
       <div className="row">
         <div className="col-11" > {objItm.name } </div> <div className="col" />
