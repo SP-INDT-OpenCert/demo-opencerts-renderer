@@ -206,7 +206,7 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
         <div className="col-11 mt-2" > <u>CERTIFICATE AWARDED</u> </div> <div className="col" />
       </div> 
 	  ) : ""}
-      <div className="row no-gutters">
+      <div className="row mt-0 pt-0 mb-0 pb-0">
         <div className="col-11" > {objItm.name } </div> <div className="col" />
       </div>
       <div className="row">
