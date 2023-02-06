@@ -210,7 +210,7 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
 //   </div>
 //	  )
 //  );
-
+/*
   const dispEFWCaption = (iSn) => {
 	  (i == 1) ? (
       <div className="row">
@@ -218,7 +218,7 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
       </div> 
 	  ) : ""
   }
-
+*/
   const dispEFWcerts = objEFWcerts ? objEFWcerts.map((objItm,i) => (
      <div>
 // {dispEFWCaption(i)}
