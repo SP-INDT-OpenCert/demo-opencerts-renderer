@@ -10,6 +10,11 @@ const addOnDisp = get(document,'additionalData.diplomaAddOn').map((txtArr,i) => 
     style={{fontFamily:'Times', fontVariant:'small-caps'}} >
     {txtArr} </div>)
 )
+const DipDescrDisp = get(document,'additionalData.diplomaFullDescr').map((txtArr,i) => (
+  <div className="h5 mt-3 d-flex justify-content-center"
+	style={{fontFamily:'Times'}} >
+    {txtArr} </div>)
+)
 
 return (
 <div className="container" style={{width:'800px', backgroundColor:'rgb(255,255,238)', borderStyle:'solid', borderColor:'rgb(204,204,170)'}}>
@@ -49,11 +54,7 @@ return (
   <div className="h5 mt-4 d-flex justify-content-center"
 	style={{fontFamily:'Times'}} >
     having successfully completed the course of study was awarded the</div>
-  {document.additionalData.diplomaFullDescr.map((objItm,i) => (
-  <div className="h5 mt-3 d-flex justify-content-center"
-	style={{fontFamily:'Times'}} >
-	{objItm} </div>  )
-  }
+  { DipDescrDisp }
 
 
 
