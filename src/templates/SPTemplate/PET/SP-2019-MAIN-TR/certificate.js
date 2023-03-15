@@ -51,7 +51,7 @@ return (
     having successfully completed the course of study was awarded the</div>
   <div className="h5 mt-3 d-flex justify-content-center"
 	style={{fontFamily:'Times'}} >
-    {document.additionalData.diplomaFullDescr} </div>
+	<p ref={(element) => {element.innerText = document.additionalData.diplomaFullDescr}} /> </div>
   <div className="row my-0">
     <div className="col"></div>
     <div className="col-1 h5 mt-4 d-flex justify-content-center"
