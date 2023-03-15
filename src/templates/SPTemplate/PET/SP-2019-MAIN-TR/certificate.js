@@ -14,7 +14,7 @@ const addOnDisp = get(document,'additionalData.diplomaAddOn').map((txtArr,i) => 
 const DipDescrDisp = p_FullDescr => {
   <div className="h5 mt-3 d-flex justify-content-center"
 	style={{fontFamily:'Times'}} >
-    {document.additionalData.diplomaFullDescr} </div>
+    {p_FullDescr} </div>
 }
 /*
 const DipDescrDisp = get(document,'additionalData.diplomaFullDescr').map((txtArr,i) => (
