@@ -49,9 +49,14 @@ return (
   <div className="h5 mt-4 d-flex justify-content-center"
 	style={{fontFamily:'Times'}} >
     having successfully completed the course of study was awarded the</div>
+  {document.additionalData.diplomaFullDescr.map((objItm,i) => (
   <div className="h5 mt-3 d-flex justify-content-center"
 	style={{fontFamily:'Times'}} >
-	<p ref={(element) => {element.innerText = document.additionalData.diplomaFullDescr}} /> </div>
+	{objItm} </div>  )
+  }
+
+
+
   <div className="row my-0">
     <div className="col"></div>
     <div className="col-1 h5 mt-4 d-flex justify-content-center"
