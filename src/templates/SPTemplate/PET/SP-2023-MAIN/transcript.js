@@ -225,7 +225,7 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
   const dispMinors = objMinors ? objMinors.map((objItm,i) => (
      <div>
       {(i == 0) ? 
-	    (objEFWcerts.length > 1) ?
+	    (objMinors.length > 1) ?
 		 (<div className="row">
            <div className="col-11 mt-2" > <u>MINORS AWARDED</u> </div> <div className="col" /></div>
 		 ) : 
