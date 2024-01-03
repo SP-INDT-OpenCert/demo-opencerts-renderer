@@ -14,6 +14,7 @@ import { templates as sp2019mainTRTemplate } from "./SPTemplate/PET/SP-2019-MAIN
 import { templates as sp2023mainTemplate } from "./SPTemplate/PET/SP-2023-MAIN";
 import { templates as sp2024mainTemplate } from "./SPTemplate/PET/SP-2024-MAIN";
 import { templates as sp2024PFPTemplate } from "./SPTemplate/PET/SP-2024-PFP";
+import { templates as sp2024DipPlusTemplate } from "./SPTemplate/PET/SP-2024-DPCERT";
 import { templates as sp2023DipPlusTemplate } from "./SPTemplate/PET/SP-2023-DPCERT";
 import { templates as SP_PACE_2019_DIPtemplate } from "./SPTemplate/CET/SP_PACE_2019_DIP";
 import { templates as SP_PACE_2019_COCtemplate } from "./SPTemplate/CET/SP_PACE_2019_COC";
@@ -35,6 +36,7 @@ export const registry: TemplateRegistry<any> = {
   SP_2019_MAIN_TR: sp2019mainTRTemplate,
   SP_2024_MAIN: sp2024mainTemplate,
   SP_2024_PFP: sp2024PFPTemplate,
+  SP_2024_DPCERT: sp2024DipPlusTemplate,
   SP_PACE_2019_DIP: SP_PACE_2019_DIPtemplate,
   SP_PACE_2019_COC: SP_PACE_2019_COCtemplate,
   SP_PACE_2019_PMC: SP_PACE_2019_PMCtemplate
