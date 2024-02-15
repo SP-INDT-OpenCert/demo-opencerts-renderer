@@ -86,7 +86,7 @@ return (
         <div className="text-center font-weight-bold"	style={{fontFamily:'Times', fontSize:'12px'}} > 
         (PACE) Academy 
         </div>
-        <div className="text-center"><img src={IMG_CERT_PACELOGO} alt="Seal" style={{width:'250px',margin-top:'-15px'}} /></div>
+        <div className="text-center"><img src={IMG_CERT_PACELOGO} alt="Seal" style={{width:'250px',marginTop:'-15px'}} /></div>
     </div>
   </div>
 
