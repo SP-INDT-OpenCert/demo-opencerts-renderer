@@ -20,18 +20,18 @@ class Template extends Component {
     const renderHeader = p_Cert => {
 	  return (
 	  <div className="container">
-    <div className="row">
+    <div className="row" style={{margin-right:'10px'}}>
     <div className="col"></div>
     <div className="col"></div>
     <div className="col"></div>
-    <div className="col my-5 justify-content-centre"><img src={IMG_CERT_SPLOGO} alt="SP Logo" width='200' height='75'/></div>
+    <div className="col my-5 justify-content-centre"><img src={IMG_CERT_SPLOGO} alt="SP Logo" width='200' height='65'/></div>
     </div>
-    <div className="row" style={{ fontSize: '0.68rem',fontFamily:'Calibri' }}>
+    <div className="row" style={{ fontSize: '0.68rem',fontFamily:'Calibri',margin-right:'20px'}}>
     <div className="col text-lg-right" style={{color:'red'}}>
       PROFESSIONAL & ADULT CONTINUING EDUCATION (PACE) ACADEMY<br/>
     </div>
     </div>
-    <div className="row" style={{ fontSize: '0.68rem',fontFamily:'Calibri' }}>
+    <div className="row" style={{ fontSize: '0.68rem',fontFamily:'Calibri',margin-right:'20px'}}>
     <div className="col text-lg-right">
       Singapore Polytechnic<br/>
       500 Dover Road Singapore 139651<br/>
@@ -102,7 +102,7 @@ const renderFooter = p_Cert => (
   <div className="row">
     <div className="col-8"/>
     <div className="col-3">
-	    <div className="text-center"><img src={get(p_Cert, 'additionalData.transcriptSignatories[0].signature')} alt="sign" style={{width:'260px'}} /></div>
+	    <div className="text-center"><img src={get(p_Cert, 'additionalData.transcriptSignatories[0].signature')} alt="sign" style={{width:'160px'}} /></div>
         <div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
     </div>
     <div className="col-1" />
