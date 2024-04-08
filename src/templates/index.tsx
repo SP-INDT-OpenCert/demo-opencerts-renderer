@@ -16,7 +16,7 @@ import { templates as sp2024mainTemplate } from "./SPTemplate/PET/SP-2024-MAIN";
 import { templates as sp2024PFPTemplate } from "./SPTemplate/PET/SP-2024-PFP";
 import { templates as sp2024DipPlusTemplate } from "./SPTemplate/PET/SP-2024-DPCERT";
 import { templates as sp2023DipPlusTemplate } from "./SPTemplate/PET/SP-2023-DPCERT";
-import { templates as spTestTemplate } from "./SPTemplate/PET/SP-TEST";
+import { templates as spTestTemplate } from "./SPTemplate/PET/SP-2025-EM";
 import { templates as SP_PACE_2019_DIPtemplate } from "./SPTemplate/CET/SP_PACE_2019_DIP";
 import { templates as SP_PACE_2019_COCtemplate } from "./SPTemplate/CET/SP_PACE_2019_COC";
 import { templates as SP_PACE_2019_PMCtemplate } from "./SPTemplate/CET/SP_PACE_2019_PMC";
