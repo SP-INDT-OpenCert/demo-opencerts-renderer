@@ -40,7 +40,7 @@ export const registry: TemplateRegistry<any> = {
   SP_2024_MAIN: sp2024mainTemplate,
   SP_2024_PFP: sp2024PFPTemplate,
   SP_2024_DPCERT: sp2024DipPlusTemplate,
-  SP_RYAN_TEST: spRyanTestTemplate,
+  SP_RYAN_TEST: sp2024mainTemplate,
   SP_PACE_2019_DIP: SP_PACE_2019_DIPtemplate,
   SP_PACE_2019_COC: SP_PACE_2019_COCtemplate,
   SP_PACE_2019_PMC: SP_PACE_2019_PMCtemplate,
