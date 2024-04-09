@@ -175,7 +175,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
         <b>{document.name}</b>
       </div>
       <div className="spacer text-sm">
-        <i>It is hereby certified that
+        It is hereby certified that
       </div>
        <div className="spacer text-md">
         <i>{document.recipient.name}</i>
