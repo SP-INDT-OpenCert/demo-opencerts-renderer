@@ -1,12 +1,3 @@
-import SPCertificate from './certificate';
-import SPTranscript from './transcript';
-
-export const templates = [
-  {
-    id: 'certificate',
-    label: 'Certificate',
-    template: SPCertificate
-  }
-];
-
-
+export * from "./govtech-template-sample";
+export * from "./testimonial-sample";
+export * from "./certificate-of-award-sample";
