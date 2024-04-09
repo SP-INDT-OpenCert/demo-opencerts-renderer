@@ -26,16 +26,16 @@ const Page = styled("div")<{ certificateBg: string }>`
   border-color:'rgb(204,204,170);
 
   .logo {
-    width: 200px;
+    width: 396px;
     @media (min-width: 1024px) {
-      width: 300px;
+      width: 128px;
     }
   }
 
   .seal {
-    width: 320px;
+    width: 140px;
     @media (min-width: 1024px) {
-      width: 600px;
+      width: 140px;
     }
   }
 
@@ -91,11 +91,11 @@ const Page = styled("div")<{ certificateBg: string }>`
     } */
 
     .logo {
-      width: 200px;
+      width: 396px;
     }
 
     .seal {
-      width: 320px;
+      width: 140px;
     }
 
     .signature {
@@ -132,16 +132,15 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
     <section className="text-center">
       <img className="img-fluid logo" src={IMG_CERT_SPLOGO} alt="SP Logo" />
       <div className="spacer text-lg">
-        <b>{document.recipient.course}</b>
+        <b>{document.name}</b>
       </div>
- 
-      /*
       <div className="spacer text-md">
-        <i>This is to certify that</i>
+        <i>It is hereby certified that</i>
       </div>
       <div className="spacer text-lg">
         <b>{document.recipient.name}</b>
       </div>
+
       <div className="spacer text-md">
         <i>has successfully completed the</i>
       </div>
@@ -152,7 +151,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="spacer">
         <img src={IMG_CERT_SEAL} className="img-fluid seal" alt="SP Seal" />
       </div>
-      */
+      
     </section>
     <section>
       <div className="row align-items-center">
