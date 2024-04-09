@@ -13,16 +13,16 @@ import { PrintWatermark } from "./common/print-watermark";
 import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages';
 
 const Page = styled("div")`
-  max-width: 297mm;
-  margin: 0 auto;
+  // max-width: 297mm;
+  // margin: 0 auto;
   width:800px;
 
   position: relative;
-  background-position: center;
-  background-size: cover;
-  background-color:'rgb(255,255,238)';
-  border-style:'solid';
-  border-color:'rgb(204,204,170);
+  // background-position: center;
+  // background-size: cover;
+  background-color: rgb(255,255,238);
+  border-style: solid;
+  border-color: rgb(204,204,170);
 
   .logo {
     width: 396px;
@@ -132,10 +132,10 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
   <Page className="p-4">
     <section className="text-center">
       <img className="img-fluid logo" src={IMG_CERT_SPLOGO} alt="SP Logo" />
-      {/* <div className="spacer text-lg"> */}
-      <div className="h5 mt-4 mb-0 justify-content-center font-weight-bold font-italic d-flex" 	style={{fontFamily:'Georgia italic'}} >
+      <div className="spacer text-lg"> 
         <b>{document.name}</b>
       </div>
+      11:34
       {/* <div className="spacer text-sm">
         <i>It is hereby certified that</i>
       </div>
