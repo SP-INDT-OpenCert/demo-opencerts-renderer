@@ -35,6 +35,21 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
         <div className="col-9" style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
         <div className="col"></div>
       </div>
+
+      <div className="h5 mt-4 d-flex justify-content-center" style={{fontFamily:'Times'}}>has successfully completed the {document.name}</div>
+      
+      <div className="row my-0">
+        <div className="col"></div>
+        <div className="col-1 h5 mt-4 d-flex justify-content-center" style={{fontFamily:'Times'}} > on </div>
+        <div className="col-3">
+	        <div className="h5 mt-3 mb-0 d-flex justify-content-center font-italic" style={{fontFamily:'Georgia italic'}} >{format(document.graduationDate, 'D MMMM YYYY')} </div>
+          <div className="row my-0">
+            <div className="col" style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
+	        </div>
+	      </div>
+	      <div className="col"></div>
+      </div>
+
     </div>
   </Page>
 );
