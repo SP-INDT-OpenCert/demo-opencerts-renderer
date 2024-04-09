@@ -50,6 +50,24 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
 	      <div className="col"></div>
       </div>
 
+      <div className="row" style={{height:'100px'}} ></div>
+      <div className="row">
+	      <div className="col-2"></div>
+        <div className="col-3 mt-0"><img src={IMG_CERT_SEAL} alt="Seal" style={{width:'140px'}} /></div>
+        <div className="col-2"></div>
+        <div className="col-4 mt-2">
+	        <div className="text-center"><img src={get(document, 'additionalData.certSignatories[0].signature')} alt="Sign1" style={{width:'160px'}} /></div>
+		      <div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
+          <div className="text-center font-weight-bold" style={{fontFamily:'Times', fontSize:'12px'}} > {document.additionalData.certSignatories[0].position} </div>
+          <div className="row" style={{height:'20px'}} ></div>
+        </div>
+	      <div className="col-1"></div>
+      </div>
+      
+      <div className="row" style={{height:'100px'}} ></div>
+      <div className="row">
+        <div className="h6 my-5 ml-3 d-flex" style={{fontFamily:'Times'}} >{document.recipient.studentId} </div>
+      </div>
     </div>
   </Page>
 );
