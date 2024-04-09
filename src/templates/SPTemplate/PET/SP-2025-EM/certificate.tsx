@@ -7,8 +7,8 @@ import "./common/demo-styles.css";
 import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
 import { GovtechOpencertsTemplateCertificate } from "../samples";
 import { PrintWatermark } from "./common/print-watermark";
-import mainLogo from "./common/opencerts-logo.svg";
-import logo from "./common/govtech-logo.png";
+//import mainLogo from "./common/opencerts-logo.svg";
+//import logo from "./common/govtech-logo.png";
 import certificateBg from "./common/certificate-background.png";
 import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages';
 
@@ -127,8 +127,9 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
   <Page certificateBg={`url('${certificateBg}')`} className="p-4">
     <PrintWatermark />
     <section className="text-center">
+      <img className="img-fluid logo-gt" src={IMG_CERT_SPLOGO} alt="SP Logo" />
       <div className="spacer">
-        <img src={IMG_CERT_SPLOGO} className="img-fluid logo-oc" alt="OpenCerts Logo" />
+        <img src={IMG_CERT_SEAL} className="img-fluid logo-oc" alt="SP Seal" />
       </div>
       <div className="spacer text-md">
         <i>This is to certify that</i>
@@ -143,7 +144,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="spacer text-md">
         <i>certification through training administered by</i>
       </div>
-      <img className="img-fluid logo-gt" src={IMG_CERT_SPLOGO} alt="Govtech Logo" />
+      
     </section>
     <section>
       <div className="row align-items-center">
