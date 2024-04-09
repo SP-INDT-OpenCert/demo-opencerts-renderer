@@ -66,7 +66,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       
       <div className="row" style={{height:'100px'}} ></div>
       <div className="row">
-        <div className="h6 my-5 ml-3 d-flex" style={{fontFamily:'Times'}} >{document.recipient.studentId} </div>
+        <div className="h6 my-5 ml-3 d-flex" style={{fontFamily:'Times'}} >{document.recipient.studentId}/{document.recipient.nric}</div>
       </div>
     </div>
   </Page>
