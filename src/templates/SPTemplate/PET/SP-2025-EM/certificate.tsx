@@ -27,7 +27,7 @@ const Page = styled("div")<{ certificateBg: string }>`
   .logo {
     width: 396px;
     @media (min-width: 1024px) {
-      width: 128px;
+      width: 396px;
     }
   }
 
@@ -61,6 +61,8 @@ const Page = styled("div")<{ certificateBg: string }>`
 
   .text-lg {
     font-size: 24px;
+    justify-content: center;
+    font-family: Georgia italic;
     @media (min-width: 1024px) {
       font-size: 34px;
     }
@@ -85,10 +87,6 @@ const Page = styled("div")<{ certificateBg: string }>`
   }
 
   @media print {
-    /* @page {
-      size: A4 landscape;
-    } */
-
     .logo {
       width: 396px;
     }
@@ -111,7 +109,8 @@ const Page = styled("div")<{ certificateBg: string }>`
 
     .text-lg {
       font-size: 24px;
-      font-family:'Georgia italic'
+      justify-content: center;
+      font-family: Georgia italic;
     }
 
     .spacer {
@@ -137,11 +136,11 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="spacer text-sm">
         <i>It is hereby certified that</i>
       </div>
-      {/* <div className="spacer text-md">
+       <div className="spacer text-md">
         <b>{document.recipient.name}</b>
       </div>
 
-      <div className="spacer text-sm">
+      {/*<div className="spacer text-sm">
         <i>has successfully completed the </i>
         {document.name}
       </div>
