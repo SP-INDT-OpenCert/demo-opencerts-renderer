@@ -17,19 +17,19 @@ const Page = styled("div")<{ certificateBg: string }>`
   margin: 0 auto;
 
   position: relative;
-  background-image: ${props => props.certificateBg};
+  /* background-image: ${props => props.certificateBg}; */
   background-position: center;
   background-size: cover;
   border: 10px solid #324353;
 
-  .logo-oc {
+  .seal {
     width: 320px;
     @media (min-width: 1024px) {
       width: 600px;
     }
   }
 
-  .logo-gt {
+  .logo {
     width: 200px;
     @media (min-width: 1024px) {
       width: 300px;
@@ -127,10 +127,8 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
   <Page certificateBg={`url('${certificateBg}')`} className="p-4">
     <PrintWatermark />
     <section className="text-center">
-      <img className="img-fluid logo-gt" src={IMG_CERT_SPLOGO} alt="SP Logo" />
-      <div className="spacer">
-        <img src={IMG_CERT_SEAL} className="img-fluid logo-oc" alt="SP Seal" />
-      </div>
+      <img className="img-fluid logo" src={IMG_CERT_SPLOGO} alt="SP Logo" />
+      
       <div className="spacer text-md">
         <i>This is to certify that</i>
       </div>
@@ -144,7 +142,9 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="spacer text-md">
         <i>certification through training administered by</i>
       </div>
-      
+      <div className="spacer">
+        <img src={IMG_CERT_SEAL} className="img-fluid seal" alt="SP Seal" />
+      </div>
     </section>
     <section>
       <div className="row align-items-center">
