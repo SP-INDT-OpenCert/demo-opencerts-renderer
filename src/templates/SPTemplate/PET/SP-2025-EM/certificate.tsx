@@ -136,47 +136,5 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="spacer text-sm">
         <i>It is hereby certified that</i>
       </div>
-
-      {/* 
-      <div className="spacer text-md">
-        <b>{document.recipient.name}</b>
-      </div>
-
-      <div className="spacer text-sm">
-        <i>has successfully completed the </i>
-        {document.name}
-      </div>
-      <div className="spacer text-sm">on</div>
-      <div className="spacer text-md">
-      {format(document.graduationDate, 'D MMMM YYYY')}
-      </div>
-      <div className="spacer">
-        <img src={IMG_CERT_SEAL} className="img-fluid seal" alt="SP Seal" />
-      </div>
-      
-    </section>
-    <section>
-      <div className="row align-items-center">
-        <div className="col">
-          <div className="text-center text-sm">
-            <img
-              className="img-fluid signature"
-              src={get(document, "additionalData.certSignatories[0].signature")}
-              alt="Signature"
-            />
-            <hr style={{ backgroundColor: "#333" }} />
-            <div>
-              <b>{get(document, "additionalData.certSignatories[0].name")}</b>
-              <br />
-              {get(document, "additionalData.certSignatories[0].position")}
-            </div>
-          </div>
-        </div>
-        <div className="col" />
-        <div className="col">
-          <div className="text-sm text-right">{document.recipient.studentId}/{document.recipient.nric}</div>
-        </div>
-      </div> 
-    </section>*/}
   </Page>
 );
