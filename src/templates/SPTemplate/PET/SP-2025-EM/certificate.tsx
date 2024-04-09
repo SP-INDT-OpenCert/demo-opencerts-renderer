@@ -12,7 +12,7 @@ import { PrintWatermark } from "./common/print-watermark";
 //import certificateBg from "./common/certificate-background.png";
 import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages';
 
-const Page = styled("div")<{ certificateBg: string }>`
+const Page = styled("div")`
   max-width: 297mm;
   margin: 0 auto;
   width:800px;
@@ -61,6 +61,8 @@ const Page = styled("div")<{ certificateBg: string }>`
 
   .text-lg {
     font-size: 24px;
+    font-family:Georgia italic;
+    justify-content-center;
     @media (min-width: 1024px) {
       font-size: 34px;
     }
@@ -111,7 +113,7 @@ const Page = styled("div")<{ certificateBg: string }>`
 
     .text-lg {
       font-size: 24px;
-      font-family:'Georgia italic'
+      font-family:Georgia italic;
     }
 
     .spacer {
@@ -130,7 +132,8 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
   <Page className="p-4">
     <section className="text-center">
       <img className="img-fluid logo" src={IMG_CERT_SPLOGO} alt="SP Logo" />
-      <div className="spacer text-lg">
+      {/* <div className="spacer text-lg"> */}
+      <div className="h5 mt-4 mb-0 justify-content-center font-weight-bold font-italic d-flex" 	style={{fontFamily:'Georgia italic'}} >
         <b>{document.name}</b>
       </div>
       {/* <div className="spacer text-sm">
