@@ -10,6 +10,7 @@ import { PrintWatermark } from "./common/print-watermark";
 import mainLogo from "./common/opencerts-logo.svg";
 import logo from "./common/govtech-logo.png";
 import certificateBg from "./common/certificate-background.png";
+import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages';
 
 const Page = styled("div")<{ certificateBg: string }>`
   max-width: 297mm;
@@ -127,7 +128,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
     <PrintWatermark />
     <section className="text-center">
       <div className="spacer">
-        <img src={mainLogo} className="img-fluid logo-oc" alt="OpenCerts Logo" />
+        <img src={IMG_CERT_SPLOGO} className="img-fluid logo-oc" alt="OpenCerts Logo" />
       </div>
       <div className="spacer text-md">
         <i>This is to certify that</i>
