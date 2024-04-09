@@ -174,7 +174,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
         <div className="col">
           <div className="text-sm text-right">{document.recipient.studentId}/{document.recipient.nric}</div>
         </div>
-      </div> */}
-    </section>
+      </div> 
+    </section>*/}
   </Page>
 );
