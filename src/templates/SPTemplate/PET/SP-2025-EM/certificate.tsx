@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./common/demo-styles.css";
 import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
 import { GovtechOpencertsTemplateCertificate } from "../samples";
-import { PrintWatermark } from "./common/print-watermark";
+//import { PrintWatermark } from "./common/print-watermark";
 //import mainLogo from "./common/opencerts-logo.svg";
 //import logo from "./common/govtech-logo.png";
 import certificateBg from "./common/certificate-background.png";
@@ -26,16 +26,18 @@ const Page = styled("div")<{ certificateBg: string }>`
 
   .logo {
     //width: 396px;
-    width: 296px;
+    width: 300px;
+    //width: 296px;
     @media (min-width: 1024px) {
       //width: 396px;
-      width: 296px;
+      width: 300px;
     }
   }
 
   .seal {
     //width: 140px;
-    width: 50px;
+    width: 100px;
+    //width: 50px;
     @media (min-width: 1024px) {
       //width: 140px;
       width: 50px;
@@ -185,14 +187,24 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       {/* <div className="row my-0"><div className="col"></div>
           <div className="col-9" style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
       <div className="col"></div></div> */}
+      
+      <div className="row my-0">
+        <div className="col"></div>
+        <div className="col-1 h5 mt-4 d-flex justify-content-center" style={{fontFamily:'Times'}} > on </div>
+        <div className="col-3">
+	      <div className="h5 mt-3 mb-0 d-flex justify-content-center font-italic" style={{fontFamily:'Georgia italic'}}> {format(document.graduationDate, 'D MMMM YYYY')} </div>
+	      <div className="row my-0">
+          <div className="col" style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
+        </div>
+	  </div>
 
-      <div className="spacer text-sm">
+      {/* <div className="spacer text-sm">
         has successfully completed the <i>{document.name}</i>
       </div>
       <div className="spacer text-sm">on</div>
       <div className="spacer text-md">
       {format(document.graduationDate, 'D MMMM YYYY')}
-      </div>
+      </div> */}
 
       <br />
 
