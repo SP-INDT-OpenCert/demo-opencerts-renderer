@@ -12,7 +12,7 @@ import { PrintWatermark } from "./common/print-watermark";
 //import certificateBg from "./common/certificate-background.png";
 import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages';
 
-const Page = styled("div")`
+/* const Page = styled("div")`
   // max-width: 297mm;
   // margin: 0 auto;
   width:800px;
@@ -27,7 +27,7 @@ const Page = styled("div")`
   .logo {
     width: 396px;
     @media (min-width: 1024px) {
-      width: 128px;
+      width: 396px;
     }
   }
 
@@ -87,10 +87,6 @@ const Page = styled("div")`
   }
 
   @media print {
-    /* @page {
-      size: A4 landscape;
-    } */
-
     .logo {
       width: 396px;
     }
@@ -124,18 +120,23 @@ const Page = styled("div")`
       padding: 64px 24px;
     }
   }
-`;
+`; */
 
 export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencertsTemplateCertificate>> = ({
   document
 }) => (
   <Page className="p-4">
     <section className="text-center">
-      <img className="img-fluid logo" src={IMG_CERT_SPLOGO} alt="SP Logo" />
-      <div className="spacer text-lg"> 
-        <b>{document.name}</b>
+      <div className="col my-5 justify-content-center">
+           <img className="img-fluid logo" src={IMG_CERT_SPLOGO} alt="SP Logo" />
+      </div>     
+      <div className="h5 mt-4 mb-0 justify-content-center font-weight-bold font-italic d-flex" style={{fontFamily:'Georgia italic'}} >
+        {document.name}
       </div>
-      11:34
+
+      <div className="spacer text-sm">
+        <i>11:48</i>
+      </div>
       {/* <div className="spacer text-sm">
         <i>It is hereby certified that</i>
       </div>
