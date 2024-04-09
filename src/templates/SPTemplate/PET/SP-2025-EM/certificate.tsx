@@ -167,7 +167,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
   document
 }) => (
   <Page certificateBg={`url('${certificateBg}')`} className="p-4">
-    <PrintWatermark />
+    {/* <PrintWatermark /> */}
     <section className="text-center">
       <img className="img-fluid logo" src={IMG_CERT_SPLOGO} alt="SP Logo" />
       
@@ -188,6 +188,10 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
           <div className="col-9" style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
       <div className="col"></div></div> */}
       
+      <div className="spacer text-sm">
+        has successfully completed the <i>{document.name}</i>
+      </div>
+
       <div className="row my-0">
         <div className="col"></div>
         <div className="col-1 h5 mt-4 d-flex justify-content-center" style={{fontFamily:'Times'}} > on </div>
@@ -199,10 +203,8 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
 	      </div>
         <div className="col"></div>
       </div>
-      {/* <div className="spacer text-sm">
-        has successfully completed the <i>{document.name}</i>
-      </div>
-      <div className="spacer text-sm">on</div>
+     
+      {/*<div className="spacer text-sm">on</div>
       <div className="spacer text-md">
       {format(document.graduationDate, 'D MMMM YYYY')}
       </div> */}
