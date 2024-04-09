@@ -134,8 +134,8 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="spacer text-lg">
         <b>{document.recipient.course}</b>
       </div>
-
-
+ 
+      /*
       <div className="spacer text-md">
         <i>This is to certify that</i>
       </div>
@@ -152,6 +152,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="spacer">
         <img src={IMG_CERT_SEAL} className="img-fluid seal" alt="SP Seal" />
       </div>
+      */
     </section>
     <section>
       <div className="row align-items-center">
