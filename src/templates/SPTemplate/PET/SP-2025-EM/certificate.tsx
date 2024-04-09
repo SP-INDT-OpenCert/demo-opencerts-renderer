@@ -20,19 +20,22 @@ const Page = styled("div")<{ certificateBg: string }>`
   /* background-image: ${props => props.certificateBg}; */
   background-position: center;
   background-size: cover;
-  border: 10px solid #324353;
-
-  .seal {
-    width: 320px;
-    @media (min-width: 1024px) {
-      width: 600px;
-    }
-  }
+  /* border: 10px solid #324353; */
+  background-color:'rgb(255,255,238)';
+  border-style:'solid';
+  border-color:'rgb(204,204,170);
 
   .logo {
     width: 200px;
     @media (min-width: 1024px) {
       width: 300px;
+    }
+  }
+
+  .seal {
+    width: 320px;
+    @media (min-width: 1024px) {
+      width: 600px;
     }
   }
 
@@ -87,12 +90,12 @@ const Page = styled("div")<{ certificateBg: string }>`
       size: A4 landscape;
     } */
 
-    .logo-oc {
-      width: 320px;
+    .logo {
+      width: 200px;
     }
 
-    .logo-gt {
-      width: 200px;
+    .seal {
+      width: 320px;
     }
 
     .signature {
@@ -128,7 +131,11 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
     <PrintWatermark />
     <section className="text-center">
       <img className="img-fluid logo" src={IMG_CERT_SPLOGO} alt="SP Logo" />
-      
+      <div className="spacer text-lg">
+        <b>{document.recipient.course}</b>
+      </div>
+
+
       <div className="spacer text-md">
         <i>This is to certify that</i>
       </div>
