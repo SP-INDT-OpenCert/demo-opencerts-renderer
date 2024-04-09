@@ -150,8 +150,10 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
         <i><b>{document.recipient.name}</b></i>
       </div>
       
-      <div className="col-9" style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
-      
+      <div className="row my-0"><div className="col"></div>
+          <div className="col-9" style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
+      <div className="col"></div></div>
+
       <div className="spacer text-sm">
         <i>has successfully completed the </i>
         {document.name}
