@@ -128,16 +128,16 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
   <Page certificateBg={`url('${certificateBg}')`} className="p-4">
     <section className="text-center">
       <img className="img-fluid logo" src={IMG_CERT_SPLOGO} alt="SP Logo" />
+      
       <div className="spacer text-lg">
         <b>{document.name}</b>
       </div>
 
       <div className="spacer text-sm">
-        <i>11:57</i>
-      </div>
-      {/* <div className="spacer text-sm">
         <i>It is hereby certified that</i>
       </div>
+
+      {/* 
       <div className="spacer text-md">
         <b>{document.recipient.name}</b>
       </div>
