@@ -143,7 +143,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="spacer text-md">
         <i>certification through training administered by</i>
       </div>
-      <img className="img-fluid logo-gt" src={logo} alt="Govtech Logo" />
+      <img className="img-fluid logo-gt" src={IMG_CERT_SPLOGO} alt="Govtech Logo" />
     </section>
     <section>
       <div className="row align-items-center">
