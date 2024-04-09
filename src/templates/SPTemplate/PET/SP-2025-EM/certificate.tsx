@@ -25,16 +25,20 @@ const Page = styled("div")<{ certificateBg: string }>`
   border-color:rgb(204,204,170);
 
   .logo {
-    width: 396px;
+    //width: 396px;
+    width: 296px;
     @media (min-width: 1024px) {
-      width: 396px;
+      //width: 396px;
+      width: 296px;
     }
   }
 
   .seal {
-    width: 140px;
+    //width: 140px;
+    width: 50px;
     @media (min-width: 1024px) {
-      width: 140px;
+      //width: 140px;
+      width: 50px;
     }
   }
 
@@ -54,7 +58,15 @@ const Page = styled("div")<{ certificateBg: string }>`
     }
   }
 
-  .text-md {
+  .text-md-dt {
+    font-size: 14px;
+    font-family: Georgia italic;
+    @media (min-width: 1024px) {
+      font-size: 14px;
+    }
+  }
+
+  .text-md-nm {
     font-size: 16px;
     font-family: Georgia italic;
     @media (min-width: 1024px) {
@@ -89,6 +101,15 @@ const Page = styled("div")<{ certificateBg: string }>`
       padding: 96px;
     }
   }
+  
+  namehr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em auto;
+    padding: 0;
+  }
 
   @media print {
     .logo {
@@ -108,9 +129,16 @@ const Page = styled("div")<{ certificateBg: string }>`
       justify-content: center;
       font-family: Times;
     }
-
-    .text-md {
+    
+    .text-md-nm {
       font-size: 16px;
+      font-style: italic;
+      justify-content: center;
+      font-family: Times;
+    }
+
+    .text-md-dt {
+      font-size: 14px;
       font-style: italic;
       justify-content: center;
       font-family: Times;
@@ -140,31 +168,37 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
     <PrintWatermark />
     <section className="text-center">
       <img className="img-fluid logo" src={IMG_CERT_SPLOGO} alt="SP Logo" />
+      
+      <br />
+
       <div className="spacer text-lg">
         <b>{document.name}</b>
       </div>
       <div className="spacer text-sm">
-        <i>It is hereby certified that</i>
+        <i>It is hereby certified that
       </div>
        <div className="spacer text-md">
-        <i><b>{document.recipient.name}</b></i>
+        <i>{document.recipient.name}</i>
       </div>
       
-      <div className="row my-0"><div className="col"></div>
+      <namehr />
+      {/* <div className="row my-0"><div className="col"></div>
           <div className="col-9" style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
-      <div className="col"></div></div>
+      <div className="col"></div></div> */}
 
       <div className="spacer text-sm">
-        <i>has successfully completed the </i>
-        {document.name}
+        has successfully completed the <i>{document.name}</i>
       </div>
       <div className="spacer text-sm">on</div>
       <div className="spacer text-md">
       {format(document.graduationDate, 'D MMMM YYYY')}
       </div>
-      {/*<div className="spacer">
+
+      <br />
+
+      <div className="spacer">
         <img src={IMG_CERT_SEAL} className="img-fluid seal" alt="SP Seal" />
-      </div> */}
+      </div>
       
     </section>
     {/* <section>
