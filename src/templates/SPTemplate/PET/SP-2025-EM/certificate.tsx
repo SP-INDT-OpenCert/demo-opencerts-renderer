@@ -18,13 +18,11 @@ const Page = styled("div")<{ certificateBg: string }>`
   width:800px;
 
   position: relative;
-  /* background-image: ${props => props.certificateBg}; */
   background-position: center;
   background-size: cover;
-  /* border: 10px solid #324353; */
-  background-color:'rgb(255,255,238)';
-  border-style:'solid';
-  border-color:'rgb(204,204,170);
+  background-color:rgb(255,255,238);
+  border-style:solid;
+  border-color:rgb(204,204,170);
 
   .logo {
     width: 396px;
@@ -139,7 +137,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="spacer text-sm">
         <i>It is hereby certified that</i>
       </div>
-      <div className="spacer text-md">
+      {/* <div className="spacer text-md">
         <b>{document.recipient.name}</b>
       </div>
 
@@ -153,10 +151,10 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       </div>
       <div className="spacer">
         <img src={IMG_CERT_SEAL} className="img-fluid seal" alt="SP Seal" />
-      </div>
+      </div> */}
       
     </section>
-    <section>
+    {/* <section>
       <div className="row align-items-center">
         <div className="col">
           <div className="text-center text-sm">
@@ -178,6 +176,6 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
           <div className="text-sm text-right">{document.recipient.studentId}/{document.recipient.nric}</div>
         </div>
       </div>
-    </section>
+    </section> */}
   </Page>
 );
