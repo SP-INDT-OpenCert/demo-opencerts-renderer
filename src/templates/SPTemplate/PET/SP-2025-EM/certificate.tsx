@@ -12,7 +12,7 @@ import { PrintWatermark } from "./common/print-watermark";
 //import certificateBg from "./common/certificate-background.png";
 import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages';
 
-/* const Page = styled("div")`
+const Page = styled("div")<{ certificateBg: string }>`
   // max-width: 297mm;
   // margin: 0 auto;
   width:800px;
@@ -25,9 +25,9 @@ import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages';
   border-color: rgb(204,204,170);
 
   .logo {
-    width: 396px;
+    width: 100px;
     @media (min-width: 1024px) {
-      width: 396px;
+      width: 100px;
     }
   }
 
@@ -88,7 +88,7 @@ import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages';
 
   @media print {
     .logo {
-      width: 396px;
+      width: 100px;
     }
 
     .seal {
@@ -120,22 +120,20 @@ import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages';
       padding: 64px 24px;
     }
   }
-`; */
+`; 
 
 export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencertsTemplateCertificate>> = ({
   document
 }) => (
-  <Page className="p-4">
+  <Page certificateBg={`url('${certificateBg}')`} className="p-4">
     <section className="text-center">
-      <div className="col my-5 justify-content-center">
-           <img className="img-fluid logo" src={IMG_CERT_SPLOGO} alt="SP Logo" />
-      </div>     
-      <div className="h5 mt-4 mb-0 justify-content-center font-weight-bold font-italic d-flex" style={{fontFamily:'Georgia italic'}} >
-        {document.name}
+      <img className="img-fluid logo" src={IMG_CERT_SPLOGO} alt="SP Logo" />
+      <div className="spacer text-lg">
+        <b>{document.name}</b>
       </div>
 
       <div className="spacer text-sm">
-        <i>11:48</i>
+        <i>11:57</i>
       </div>
       {/* <div className="spacer text-sm">
         <i>It is hereby certified that</i>
