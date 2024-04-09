@@ -47,6 +47,8 @@ const Page = styled("div")<{ certificateBg: string }>`
 
   .text-sm {
     font-size: 12px;
+    justify-content: center;
+    font-family: Times;
     @media (min-width: 1024px) {
       font-size: 21px;
     }
@@ -54,6 +56,7 @@ const Page = styled("div")<{ certificateBg: string }>`
 
   .text-md {
     font-size: 16px;
+    font-family: Georgia italic;
     @media (min-width: 1024px) {
       font-size: 26px;
     }
@@ -62,7 +65,8 @@ const Page = styled("div")<{ certificateBg: string }>`
   .text-lg {
     font-size: 24px;
     justify-content: center;
-    font-family: Georgia italic;
+    font-family: Times;
+    font-variant: small-caps;
     @media (min-width: 1024px) {
       font-size: 34px;
     }
@@ -101,16 +105,22 @@ const Page = styled("div")<{ certificateBg: string }>`
 
     .text-sm {
       font-size: 12px;
+      justify-content: center;
+      font-family: Times;
     }
 
     .text-md {
       font-size: 16px;
+      font-style: italic;
+      justify-content: center;
+      font-family: Times;
     }
 
     .text-lg {
       font-size: 24px;
-      justify-content: center;
-      font-family: Georgia italic;
+    justify-content: center;
+    font-family: Times;
+    font-variant: small-caps;
     }
 
     .spacer {
@@ -137,10 +147,12 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
         <i>It is hereby certified that</i>
       </div>
        <div className="spacer text-md">
-        <b>{document.recipient.name}</b>
+        <i><b>{document.recipient.name}</b></i>
       </div>
-
-      {/*<div className="spacer text-sm">
+      
+      <div className="col-9" style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
+      
+      <div className="spacer text-sm">
         <i>has successfully completed the </i>
         {document.name}
       </div>
@@ -148,7 +160,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="spacer text-md">
       {format(document.graduationDate, 'D MMMM YYYY')}
       </div>
-      <div className="spacer">
+      {/*<div className="spacer">
         <img src={IMG_CERT_SEAL} className="img-fluid seal" alt="SP Seal" />
       </div> */}
       
