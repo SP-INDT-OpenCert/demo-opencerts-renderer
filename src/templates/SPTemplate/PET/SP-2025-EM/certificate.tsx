@@ -9,7 +9,7 @@ import { GovtechOpencertsTemplateCertificate } from "../samples";
 import { PrintWatermark } from "./common/print-watermark";
 //import mainLogo from "./common/opencerts-logo.svg";
 //import logo from "./common/govtech-logo.png";
-import certificateBg from "./common/certificate-background.png";
+//import certificateBg from "./common/certificate-background.png";
 import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages';
 
 const Page = styled("div")<{ certificateBg: string }>`
@@ -18,10 +18,8 @@ const Page = styled("div")<{ certificateBg: string }>`
   width:800px;
 
   position: relative;
-  /* background-image: ${props => props.certificateBg}; */
   background-position: center;
   background-size: cover;
-  /* border: 10px solid #324353; */
   background-color:'rgb(255,255,238)';
   border-style:'solid';
   border-color:'rgb(204,204,170);
@@ -129,14 +127,13 @@ const Page = styled("div")<{ certificateBg: string }>`
 export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencertsTemplateCertificate>> = ({
   document
 }) => (
-  <Page certificateBg={`url('${certificateBg}')`} className="p-4">
-    <PrintWatermark />
+  <Page className="p-4">
     <section className="text-center">
       <img className="img-fluid logo" src={IMG_CERT_SPLOGO} alt="SP Logo" />
       <div className="spacer text-lg">
         <b>{document.name}</b>
       </div>
-      <div className="spacer text-sm">
+      {/* <div className="spacer text-sm">
         <i>It is hereby certified that</i>
       </div>
       <div className="spacer text-md">
@@ -177,7 +174,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
         <div className="col">
           <div className="text-sm text-right">{document.recipient.studentId}/{document.recipient.nric}</div>
         </div>
-      </div>
+      </div> */}
     </section>
   </Page>
 );
