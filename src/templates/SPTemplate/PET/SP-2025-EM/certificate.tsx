@@ -15,6 +15,7 @@ import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages';
 const Page = styled("div")<{ certificateBg: string }>`
   max-width: 297mm;
   margin: 0 auto;
+  width:800px;
 
   position: relative;
   /* background-image: ${props => props.certificateBg}; */
@@ -112,6 +113,7 @@ const Page = styled("div")<{ certificateBg: string }>`
 
     .text-lg {
       font-size: 24px;
+      font-family:'Georgia italic'
     }
 
     .spacer {
@@ -134,19 +136,20 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="spacer text-lg">
         <b>{document.name}</b>
       </div>
-      <div className="spacer text-md">
+      <div className="spacer text-sm">
         <i>It is hereby certified that</i>
       </div>
-      <div className="spacer text-lg">
+      <div className="spacer text-md">
         <b>{document.recipient.name}</b>
       </div>
 
-      <div className="spacer text-md">
-        <i>has successfully completed the</i>
+      <div className="spacer text-sm">
+        <i>has successfully completed the </i>
+        {document.name}
       </div>
-      <div className="spacer text-lg">OpenCerts Demo</div>
+      <div className="spacer text-sm">on</div>
       <div className="spacer text-md">
-        <i>certification through training administered by</i>
+      {format(document.graduationDate, 'D MMMM YYYY')}
       </div>
       <div className="spacer">
         <img src={IMG_CERT_SEAL} className="img-fluid seal" alt="SP Seal" />
@@ -166,14 +169,13 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
             <div>
               <b>{get(document, "additionalData.certSignatories[0].name")}</b>
               <br />
-              {get(document, "additionalData.certSignatories[0].position")},{" "}
-              {get(document, "additionalData.certSignatories[0].organisation")}
+              {get(document, "additionalData.certSignatories[0].position")}
             </div>
           </div>
         </div>
         <div className="col" />
         <div className="col">
-          <div className="text-sm text-right">Dated {format(document.issuedOn, "DD/MM/YYYY")}</div>
+          <div className="text-sm text-right">{document.recipient.studentId}/{document.recipient.nric}</div>
         </div>
       </div>
     </section>
