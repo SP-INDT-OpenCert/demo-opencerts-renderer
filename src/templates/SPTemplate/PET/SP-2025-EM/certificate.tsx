@@ -9,25 +9,27 @@ import { GovtechOpencertsTemplateCertificate } from "../samples";
 import { PrintWatermark } from "./common/print-watermark";
 //import mainLogo from "./common/opencerts-logo.svg";
 //import logo from "./common/govtech-logo.png";
-//import certificateBg from "./common/certificate-background.png";
+import certificateBg from "./common/certificate-background.png";
 import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages';
 
 const Page = styled("div")<{ certificateBg: string }>`
-  // max-width: 297mm;
-  // margin: 0 auto;
+  max-width: 297mm;
+  margin: 0 auto;
   width:800px;
 
   position: relative;
-  // background-position: center;
-  // background-size: cover;
-  background-color: rgb(255,255,238);
-  border-style: solid;
-  border-color: rgb(204,204,170);
+  /* background-image: ${props => props.certificateBg}; */
+  background-position: center;
+  background-size: cover;
+  /* border: 10px solid #324353; */
+  background-color:'rgb(255,255,238)';
+  border-style:'solid';
+  border-color:'rgb(204,204,170);
 
   .logo {
-    width: 100px;
+    width: 396px;
     @media (min-width: 1024px) {
-      width: 100px;
+      width: 128px;
     }
   }
 
@@ -61,8 +63,6 @@ const Page = styled("div")<{ certificateBg: string }>`
 
   .text-lg {
     font-size: 24px;
-    font-family:Georgia italic;
-    justify-content-center;
     @media (min-width: 1024px) {
       font-size: 34px;
     }
@@ -87,8 +87,12 @@ const Page = styled("div")<{ certificateBg: string }>`
   }
 
   @media print {
+    /* @page {
+      size: A4 landscape;
+    } */
+
     .logo {
-      width: 100px;
+      width: 396px;
     }
 
     .seal {
@@ -109,7 +113,7 @@ const Page = styled("div")<{ certificateBg: string }>`
 
     .text-lg {
       font-size: 24px;
-      font-family:Georgia italic;
+      font-family:'Georgia italic'
     }
 
     .spacer {
@@ -120,21 +124,60 @@ const Page = styled("div")<{ certificateBg: string }>`
       padding: 64px 24px;
     }
   }
-`; 
+`;
 
 export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencertsTemplateCertificate>> = ({
   document
 }) => (
   <Page certificateBg={`url('${certificateBg}')`} className="p-4">
+    <PrintWatermark />
     <section className="text-center">
       <img className="img-fluid logo" src={IMG_CERT_SPLOGO} alt="SP Logo" />
-      
       <div className="spacer text-lg">
         <b>{document.name}</b>
       </div>
-
       <div className="spacer text-sm">
         <i>It is hereby certified that</i>
       </div>
+      <div className="spacer text-md">
+        <b>{document.recipient.name}</b>
+      </div>
+
+      <div className="spacer text-sm">
+        <i>has successfully completed the </i>
+        {document.name}
+      </div>
+      <div className="spacer text-sm">on</div>
+      <div className="spacer text-md">
+      {format(document.graduationDate, 'D MMMM YYYY')}
+      </div>
+      <div className="spacer">
+        <img src={IMG_CERT_SEAL} className="img-fluid seal" alt="SP Seal" />
+      </div>
+      
+    </section>
+    <section>
+      <div className="row align-items-center">
+        <div className="col">
+          <div className="text-center text-sm">
+            <img
+              className="img-fluid signature"
+              src={get(document, "additionalData.certSignatories[0].signature")}
+              alt="Signature"
+            />
+            <hr style={{ backgroundColor: "#333" }} />
+            <div>
+              <b>{get(document, "additionalData.certSignatories[0].name")}</b>
+              <br />
+              {get(document, "additionalData.certSignatories[0].position")}
+            </div>
+          </div>
+        </div>
+        <div className="col" />
+        <div className="col">
+          <div className="text-sm text-right">{document.recipient.studentId}/{document.recipient.nric}</div>
+        </div>
+      </div>
+    </section>
   </Page>
 );
