@@ -76,6 +76,14 @@ class Template extends Component {
 </div>
 </div>
 
+<div className="col-15">
+	<div className="row" style={{ fontSize: '15px',fontFamily:'Calibri' }}>
+  <div className="col-1" />
+      <div className="col-2 " ><b>Cumulative GPA:</b></div>
+      <div className="col-4 " ><b>{get(document, "transcript[0].cumGPA")}</b></div>
+</div>
+</div>
+
 <div><br/></div>
 
 {/*<div className="row h5">		 
@@ -261,8 +269,8 @@ const renderFooter = p_Cert => (
 const renderEachModule = (p_objMod,iSn) => {
   return (
   <div className="row" style={{fontSize: '15px',fontFamily:'Calibri'}}>
-      <div className="col-1 text-center" style={{minWidth:'80px'}}> {p_objMod.name} </div>
-      <div className="col-8 "> {p_objMod.description} </div>
+      <div className="col-2" style={{minWidth:'80px'}}> {p_objMod.name} </div>
+      <div className="col-7"> {p_objMod.description} </div>
       <div className="col-1 text-center"> {p_objMod.grade} </div>
       <div className="col-1 text-center"> {p_objMod.courseCredit} </div> 
       <div className="col text-center" />
@@ -300,8 +308,8 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
     </div>
 
     <div className="row" style={{fontSize: '15px',fontFamily:'Calibri'}}>
-      <div className="col-1 text-center" style={{minWidth:'80px'}} ><b>Code</b></div>
-      <div className="col-8"><b>Module Title</b></div>
+      <div className="col-2" style={{minWidth:'80px'}} ><b>Code</b></div>
+      <div className="col-7"><b>Module Title</b></div>
       <div className="col-1 text-center"><b>Grade</b></div>
       <div className="col-1 text-center"><b>Units</b></div>
       <div className="col" />
@@ -311,10 +319,6 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
     <div className="row" style={{fontSize: '15px',fontFamily:'Calibri'}}>
       <div className="col-3"><b>Semester GPA:</b></div>
       <div className="col"><b>{get(p_ObjTranscript, 'semGPA')}</b></div>
-    </div>
-    <div className="row" style={{fontSize: '15px',fontFamily:'Calibri'}}>
-      <div className="col-3"><b>Cumulative GPA:</b></div>
-      <div className="col"><b>{get(p_ObjTranscript, 'cumGPA')}</b></div>
     </div>
     <div className="row" style={{fontSize: '15px',fontFamily:'Calibri'}}>
       <div className="col-3"><b>{get(p_ObjTranscript, 'description')}</b></div>
