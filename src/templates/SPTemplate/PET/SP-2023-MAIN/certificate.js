@@ -6,7 +6,7 @@ import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages'
 
 const Template = ({ document }) => {
 const addOnDisp = get(document,'additionalData.diplomaAddOn').map((txtArr,i) => (
-  <div className="h2 my-0 font-weight-bold d-flex justify-content-center"
+  <div className="h2 my-0 font-weight-bold d-flex justify-content-center text-center"
     style={{fontFamily:'Times', fontVariant:'small-caps'}} >
     {txtArr} </div>)
 )
@@ -36,7 +36,7 @@ return (
     <div className="col"></div>
   </div>
 
-  <div className="h2 mt-5 mb-0 font-weight-bold d-flex justify-content-center text-center"
+  <div className="h2 mt-5 mb-0 font-weight-bold d-flex justify-content-center"
     style={{fontFamily:'Times', fontVariant:'small-caps'}} >
     {document.additionalData.diplomaName} </div>
 	
