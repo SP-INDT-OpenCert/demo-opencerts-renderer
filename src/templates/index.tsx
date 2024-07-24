@@ -22,7 +22,6 @@ import { templates as SP_PACE_2019_COCtemplate } from "./SPTemplate/CET/SP_PACE_
 import { templates as SP_PACE_2019_PMCtemplate } from "./SPTemplate/CET/SP_PACE_2019_PMC";
 import { templates as SP_PACE_2019_DIPNEWtemplate } from "./SPTemplate/CET/SP_PACE_2019_DIP_NEW";
 import { templates as SP_PACE_2019_PMCNEWtemplate } from "./SPTemplate/CET/SP_PACE_2019_PMC_NEW";
-import { templates as sp2024maincloneTemplate } from "./SPTemplate/PET/SP-2024-MAIN-CLONE";
 
 import { TemplateRegistry } from "@govtechsg/decentralized-renderer-react-components";
 
@@ -46,6 +45,5 @@ export const registry: TemplateRegistry<any> = {
   SP_PACE_2019_COC: SP_PACE_2019_COCtemplate,
   SP_PACE_2019_PMC: SP_PACE_2019_PMCtemplate,
   SP_PACE_2019_DIP_NEW: SP_PACE_2019_DIPNEWtemplate,
-  SP_PACE_2019_PMC_NEW: SP_PACE_2019_PMCNEWtemplate,
-  SP_2024_MAIN_CLONE: sp2024maincloneTemplate
+  SP_PACE_2019_PMC_NEW: SP_PACE_2019_PMCNEWtemplate
 };
