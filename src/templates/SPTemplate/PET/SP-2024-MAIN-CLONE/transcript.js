@@ -75,7 +75,7 @@ const renderFooter = p_Cert => (
 	</div>
     <div className="col-3">
 	  <div className="row">
-	    <div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333', margin-top: '10px', margin-bottom: '10px'}} ></div>
+	    <div style={{border-bottom: '1px solid #333', margin-top: '10px', margin-bottom: '10px'}} ></div>
 	  </div>
       <div className="row">
         <div className="text-center font-weight-bold"
