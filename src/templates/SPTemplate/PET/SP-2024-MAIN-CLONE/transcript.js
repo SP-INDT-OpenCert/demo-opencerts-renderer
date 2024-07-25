@@ -47,31 +47,15 @@ class Template extends Component {
 const renderFooter = p_Cert => (
  <div className="container">
   <div className="row" style={{height:'20px'}} ></div>
-   {/* SR-2023-8348 Start S10131508 17/07/2024 */}
-	   {/*
-   <div className="row" style={{height:'100px'}}> </div>
+   {/* SR-2023-8348 Start S10131508 17/07/2024 */} 
+   <div className="row" style={{height:'50px'}}> </div>
    <div className="row h5">
       <div className="col-1" />
-	  <div className="col-2" style={{fontFamily:'Times', fontSize:'0.68rem'}} > {document.additionalData.transcriptSignatories[0].moduleexclude} </div>
-	   </div> */}
+	    <div className="col-2" style={{fontFamily:'Times', fontSize:'0.68rem'}} > {document.additionalData.transcriptSignatories[0].moduleexclude} </div>
+	  </div> 
    {/* SR-2023-8348 End S10131508 17/07/2024 */}
   <div className="row">
-   {/* SR-2023-8348 Start S10131508 17/07/2024 */}
-   <div className="col-1" />
-   <div className="col-2" style={{fontFamily:'Times', fontSize:'0.68rem'}} > {document.additionalData.transcriptSignatories[0].moduleexclude} </div>
-    <div className="col-3" />
-	 <div className="col-4" />
-	  <div className="col-5" />
-	   <div className="col-6" />
-	    <div className="col-7" />
-   {/* SR-2023-8348 End S10131508 17/07/2024 */}
-  {/* SR-2023-8348 Start S10131508 17/07/2024 */}
-	  <div className="col-8" /> 
-	  {/*<div className="col-8" /> 
-	   <div className="col"
-	  style={{fontFamily:'Times', fontSize:'0.68rem'}} > {document.additionalData.transcriptSignatories[0].moduleexclude} </div> */}
-		{/* </div> */}
-	{/* SR-2023-8348 End S10131508 17/07/2024 */}
+	<div className="col-8" /> 
     <div className="col-3">
 	    <div className="text-center"><img src={get(p_Cert, 'additionalData.transcriptSignatories[0].signature')} alt="sign" style={{width:'160px'}} /></div>
         <div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
