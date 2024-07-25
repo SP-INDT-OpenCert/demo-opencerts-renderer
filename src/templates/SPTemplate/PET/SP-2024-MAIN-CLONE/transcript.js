@@ -66,6 +66,7 @@ const renderFooter = p_Cert => (
     </div>
 	  <div className="col-1" /> SR-2023-8348 S10131508 25/07/2024 
 	   */}
+	<div className="col-1" />
 	<div className="col-8">
       <div className="row">
         <div className="col-2" style={{fontFamily:'Times', fontSize:'0.68rem'}} > {document.additionalData.transcriptSignatories[0].moduleexclude} </div>
