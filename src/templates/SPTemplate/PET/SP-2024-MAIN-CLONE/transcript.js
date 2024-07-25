@@ -73,6 +73,9 @@ const renderFooter = p_Cert => (
       </div>
 	</div>
     <div className="col-3">
+	  <div className="row">
+	    <div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
+	  </div>
       <div className="row">
         <div className="text-center font-weight-bold"
 		style={{fontFamily:'Times', fontSize:'12px'}} > {document.additionalData.transcriptSignatories[0].position} </div>
