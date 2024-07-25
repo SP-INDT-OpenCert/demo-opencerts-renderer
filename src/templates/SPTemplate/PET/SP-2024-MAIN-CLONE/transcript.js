@@ -51,7 +51,7 @@ const renderFooter = p_Cert => (
   {/* SR-2023-8348 Start S10131508 17/07/2024 
    <div className="col-8" /> */}
 	<div className="col-8">
-	   <div className="text-left"
+	   <div className="col-2"
 		style={{fontFamily:'Times', fontSize:'0.68rem'}} > {document.additionalData.transcriptSignatories[0].moduleexclude} </div>
 	</div>
 	{/* SR-2023-8348 End S10131508 17/07/2024 */}
@@ -291,13 +291,13 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
       <div className="col">{get(p_ObjTranscript, 'semGPA')}</div>
     </div>
     <div className="row mb-2">
-	  /*SR-2023-8348 Start S10131508 12/07/2024 */
-      /* <div className="col-3">Cumulative GPA:</div> */
+	{/*SR-2023-8348 Start S10131508 12/07/2024 
+	<div className="col-3">Cumulative GPA:</div> */}
 	  <div className="col-3">Cumulative GPA
 	     <div className="text-left"
 		style={{fontFamily:'Times', fontSize:'0.68rem'}} > {get(p_ObjTranscript, 'cumGPAExInd')} </div>
 	  :</div>
-	  /*SR-2023-8348 End S10131508 12/07/2024 */
+	  {/*SR-2023-8348 End S10131508 12/07/2024 */}
       <div className="col">{get(p_ObjTranscript, 'cumGPA')}</div>
     </div>
 	{dispOthItems}
