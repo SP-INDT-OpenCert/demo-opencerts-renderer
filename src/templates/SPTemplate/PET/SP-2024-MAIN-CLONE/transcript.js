@@ -57,10 +57,10 @@ const renderFooter = p_Cert => (
   <div className="row">
 	<div className="col-8" /> 
     <div className="col-3">
+	    <div className="text-center"><img src={get(p_Cert, 'additionalData.transcriptSignatories[0].signature')} alt="sign" style={{width:'160px'}} /></div>
 		{/* SR-2023-8348 Start S10131508 17/07/2024 */} 
 		<div className="text-left" style={{fontFamily:'Times', fontSize:'0.68rem'}} > {document.additionalData.transcriptSignatories[0].moduleexclude} </div>
 		{/* SR-2023-8348 End S10131508 17/07/2024 */}
-	    <div className="text-center"><img src={get(p_Cert, 'additionalData.transcriptSignatories[0].signature')} alt="sign" style={{width:'160px'}} /></div>
         <div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
         <div className="text-center font-weight-bold"
 		style={{fontFamily:'Times', fontSize:'12px'}} > {document.additionalData.transcriptSignatories[0].position} </div>
