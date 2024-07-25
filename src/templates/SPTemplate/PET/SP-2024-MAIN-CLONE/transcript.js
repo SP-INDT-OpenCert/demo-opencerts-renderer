@@ -58,10 +58,10 @@ const renderFooter = p_Cert => (
 	<div className="col-8" /> 
     <div className="col-3">
 	    <div className="text-center"><img src={get(p_Cert, 'additionalData.transcriptSignatories[0].signature')} alt="sign" style={{width:'160px'}} /></div>
-		{/* SR-2023-8348 Start S10131508 17/07/2024 */} 
-		<div className="text-left" style={{fontFamily:'Times', fontSize:'0.68rem'}} > {document.additionalData.transcriptSignatories[0].moduleexclude} </div>
-		{/* SR-2023-8348 End S10131508 17/07/2024 */}
         <div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
+		{/* SR-2023-8348 Start S10131508 17/07/2024 */} 
+		<div className="col-3" style={{fontFamily:'Times', fontSize:'0.68rem'}} > {document.additionalData.transcriptSignatories[0].moduleexclude} </div>
+		{/* SR-2023-8348 End S10131508 17/07/2024 */}
         <div className="text-center font-weight-bold"
 		style={{fontFamily:'Times', fontSize:'12px'}} > {document.additionalData.transcriptSignatories[0].position} </div>
     </div>
@@ -298,10 +298,6 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
 	{/*SR-2023-8348 Start S10131508 12/07/2024 
 	<div className="col-3">Cumulative GPA:</div> */}
 	  <div className="col-3">Cumulative GPA<sub>{get(p_ObjTranscript, 'cumGPAExInd')}</sub>:</div>
-		  {/*
-	     <div className="text-left"
-		style={{fontFamily:'Times', fontSize:'0.68rem'}} > {get(p_ObjTranscript, 'cumGPAExInd')} </div>
-		  :</div> */}
 	  {/*SR-2023-8348 End S10131508 12/07/2024 */}
       <div className="col">{get(p_ObjTranscript, 'cumGPA')}</div>
     </div>
