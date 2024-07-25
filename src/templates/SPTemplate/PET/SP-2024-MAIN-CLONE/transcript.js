@@ -285,7 +285,9 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
       <div className="col">{get(p_ObjTranscript, 'semGPA')}</div>
     </div>
     <div className="row mb-2">
+	  /*SR-2023-8348 Start S10131508 12/07/2024 */
       <div className="col-3">Cumulative GPA:</div>
+	  /*SR-2023-8348 End S10131508 12/07/2024 */
       <div className="col">{get(p_ObjTranscript, 'cumGPA')}</div>
     </div>
 	{dispOthItems}
