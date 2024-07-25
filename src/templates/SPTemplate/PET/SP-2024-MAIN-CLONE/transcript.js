@@ -51,6 +51,8 @@ const renderFooter = p_Cert => (
     /* SR-2023-8348 Start S10131508 17/07/2024 */
     /* <div className="col-8" /> */
 	<div className="col-8">
+	   <div className="text-left"
+		style={{fontFamily:'Times', fontSize:'0.68rem'}} > {document.additionalData.transcriptSignatories[0].moduleexclude} </div>
 	</div>
 	/* SR-2023-8348 End S10131508 17/07/2024 */
     <div className="col-3">
