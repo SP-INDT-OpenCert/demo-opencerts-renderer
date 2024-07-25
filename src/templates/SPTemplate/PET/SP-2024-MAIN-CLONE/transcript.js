@@ -56,6 +56,7 @@ const renderFooter = p_Cert => (
    {/* SR-2023-8348 End S10131508 17/07/2024 */}
   <div className="row">
    {/* SR-2023-8348 Start S10131508 17/07/2024 */} 
+	   {/*
   	<div className="col-8" />
     <div className="col-3">
 	    <div className="text-center"><img src={get(p_Cert, 'additionalData.transcriptSignatories[0].signature')} alt="sign" style={{width:'160px'}} /></div>
@@ -63,7 +64,33 @@ const renderFooter = p_Cert => (
         <div className="text-center font-weight-bold"
 		style={{fontFamily:'Times', fontSize:'12px'}} > {document.additionalData.transcriptSignatories[0].position} </div>
     </div>
-	  {/* <div className="col-1" /> */}
+	  <div className="col-1" /> SR-2023-8348 S10131508 25/07/2024 
+	   */}
+	<div className="col-1" />
+	<div className="col-1">
+	  <div className="row">
+        <div className="col-2"></div>
+      </div>
+      <div className="row">
+        <div className="col-2"></div>
+      </div>
+      <div className="row">
+        <div className="col-2" style={{fontFamily:'Times', fontSize:'0.68rem'}} > {document.additionalData.transcriptSignatories[0].moduleexclude} </div>
+      </div>
+	</div>
+    <div className="col-1">
+	<div className="row">
+        <div className="col-2"></div>
+      </div>
+      <div className="row">
+        <div className="col-2"></div>
+      </div>
+      <div className="row">
+        <div className="text-center font-weight-bold"
+		style={{fontFamily:'Times', fontSize:'12px'}} > {document.additionalData.transcriptSignatories[0].position} </div>
+      </div>
+	</div>
+	{/* SR-2023-8348 End S10131508 17/07/2024 */} 
   </div>
   <div className="row" style={{height:'48px'}} ></div>
     
