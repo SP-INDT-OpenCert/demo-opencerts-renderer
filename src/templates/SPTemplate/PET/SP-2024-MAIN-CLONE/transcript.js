@@ -70,12 +70,12 @@ const renderFooter = p_Cert => (
 	<div className="col-7">
 	  <div className="row" />
       <div className="row">
-        <div className="text-left" style={{fontFamily:'Times', fontSize:'0.68rem'}} > &nbsp;&nbsp;&nbsp;{document.additionalData.transcriptSignatories[0].moduleexclude} </div>
+        <div className="text-left" style={{fontFamily:'Times', fontSize:'0.68rem'}} > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{document.additionalData.transcriptSignatories[0].moduleexclude} </div>
       </div>
 	</div>
     <div className="col-3">
 	  <div className="row">
-	    <div style={{borderBottomWidth:'10px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
+	    <div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333', margin-top: '10px', margin-bottom: '10px'}} ></div>
 	  </div>
       <div className="row">
         <div className="text-center font-weight-bold"
