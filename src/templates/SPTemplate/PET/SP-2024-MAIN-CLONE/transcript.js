@@ -67,7 +67,7 @@ const renderFooter = p_Cert => (
 	  <div className="col-1" /> SR-2023-8348 S10131508 25/07/2024 
 	   */}
 	   {/*<div className="col-1" />*/}
-	<div className="col-8">
+	<div className="col-9">
 	  <div className="row" />
 	  <div className="row" />
       {/*<div className="row">
