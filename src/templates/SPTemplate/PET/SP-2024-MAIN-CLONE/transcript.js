@@ -79,7 +79,7 @@ const renderFooter = p_Cert => (
 	    <div className="text-center"><img src={get(p_Cert, 'additionalData.transcriptSignatories[0].signature')} alt="sign" style={{width:'160px'}} /></div>
 	  </div>
 	  <div className="row">
-  (/*<div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} >________________</div>*/}
+	  {/*<div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} >________________</div>*/}
 	     <div className="text-center">__________________</div>
 	  </div>
       <div className="row">
