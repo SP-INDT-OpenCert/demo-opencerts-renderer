@@ -48,14 +48,34 @@ const renderFooter = p_Cert => (
  <div className="container">
   <div className="row" style={{height:'20px'}} ></div>
   <div className="row">
-    <div className="col-8" />
+   {/* SR-2023-8348 Start S10131508 17/07/2024 */} 
+	   {/*
+  	<div className="col-8" />
     <div className="col-3">
 	    <div className="text-center"><img src={get(p_Cert, 'additionalData.transcriptSignatories[0].signature')} alt="sign" style={{width:'160px'}} /></div>
         <div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
         <div className="text-center font-weight-bold"
 		style={{fontFamily:'Times', fontSize:'12px'}} > {document.additionalData.transcriptSignatories[0].position} </div>
     </div>
+	  <div className="col-1" />  */}
+	<div className="col-1" />
+	<div className="col-7">
+	</div>
+    <div className="col-3">
+	   <div className="text-center"><img src={get(p_Cert, 'additionalData.transcriptSignatories[0].signature')} alt="sign" style={{width:'160px'}} /></div>
+	   <div className="text-center" style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
+	</div>
+  </div>
+  <div className="row">
     <div className="col-1" />
+	<div className="col-7">
+	   <div className="text-left" style={{fontFamily:'Times', fontSize:'0.85rem'}} >{document.additionalData.transcriptSignatories[0].moduleexclude} </div>
+	</div>
+	<div className="col-3">
+	   <div className="text-center font-weight-bold"
+	   style={{fontFamily:'Times', fontSize:'12px'}} > {document.additionalData.transcriptSignatories[0].position} </div>
+	</div>
+  {/* SR-2023-8348 End S10131508 17/07/2024 */} 
   </div>
   <div className="row" style={{height:'48px'}} ></div>
     
@@ -285,7 +305,10 @@ const renderTermTranscript = (p_ObjTranscript,iSn) => {
       <div className="col">{get(p_ObjTranscript, 'semGPA')}</div>
     </div>
     <div className="row mb-2">
-      <div className="col-3">Cumulative GPA:</div>
+	{/*SR-2023-8348 Start S10131508 12/07/2024 
+	<div className="col-3">Cumulative GPA:</div> */}
+	  <div className="col-3">Cumulative GPA<sup>{get(p_ObjTranscript, 'cumGPAExInd')}</sup>:</div>
+	  {/*SR-2023-8348 End S10131508 12/07/2024 */}
       <div className="col">{get(p_ObjTranscript, 'cumGPA')}</div>
     </div>
 	{dispOthItems}
