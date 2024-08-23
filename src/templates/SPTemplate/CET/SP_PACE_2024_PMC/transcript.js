@@ -82,7 +82,7 @@ class Template extends Component {
                       <b>Program Status:</b>
                     </div>
                     <div className="col-7">
-                      <b>{document.additionalData.TransOverallStatus} (Part-Time)</b>
+                      <b>Active in Program (Part-Time)</b>
                     </div>
                   </div>
                   <div className="row" style={{ fontSize: "15px", fontFamily: "Calibri" }}>
@@ -109,7 +109,7 @@ class Template extends Component {
         <div className="row" style={{ height: "20px" }}></div>
         <div className="row">
           <div className="col-8" />
-          <div className="col-3">
+          <div className="col-3 d-flex flex-column">
             <div className="text-center">
               <img
                 src={get(p_Cert, "additionalData.transcriptSignatories[0].signature")}

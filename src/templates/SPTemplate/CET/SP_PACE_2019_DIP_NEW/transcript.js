@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { get } from "lodash";
 import PropTypes from "prop-types";
 import HideTranscriptBanner from "../common/HideTranscriptBanner";
-import { IMG_CERT_SPLOGO } from "./Certimages";
+import { IMG_CERT_SPLOGO } from "../common/images";
 
 class Template extends Component {
   constructor(props) {
