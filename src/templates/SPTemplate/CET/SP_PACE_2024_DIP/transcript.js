@@ -97,6 +97,7 @@ class Template extends Component {
               </div>
             </div>
           </div>
+
           <div>
             <br />
           </div>
@@ -109,7 +110,7 @@ class Template extends Component {
         <div className="row" style={{ height: "20px" }}></div>
         <div className="row">
           <div className="col-8" />
-          <div className="col-3">
+          <div className="col-3 d-flex flex-column">
             <div className="text-center">
               <img
                 src={get(p_Cert, "additionalData.transcriptSignatories[0].signature")}
@@ -167,14 +168,6 @@ class Template extends Component {
             <b>GRADING SYSTEM</b>
           </div>
         </div>
-
-        {/*<div className="row" style={{height:'5px'}} ></div>
-  <div classname="row">
-    <div classname="col-15">
-      <div style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
-    </div>
-</div>*/}
-
         <div className="row" style={{ height: "5px" }}></div>
         <div className="row" style={{ fontSize: "15px", fontFamily: "Calibri" }}>
           <div className="col-1"></div>
@@ -282,7 +275,7 @@ class Template extends Component {
                   <td>UP</td>
                   <td className="text-center">-&nbsp;&nbsp;</td>
                   <td>
-                    PASS IN MODULE THAT <br />
+                    PASS IN A MODULE THAT <br />
                     HAS NO GRADE POINT
                   </td>
                   <td className="text-center">NA</td>
@@ -291,7 +284,7 @@ class Template extends Component {
                   <td>UF</td>
                   <td className="text-center">-&nbsp;&nbsp;</td>
                   <td>
-                    FAIL IN MODULE THAT <br /> HAS NO GRADE POINT
+                    FAIL IN A MODULE THAT <br /> HAS NO GRADE POINT
                   </td>
                   <td className="text-center">NA</td>
                 </tr>
@@ -374,20 +367,24 @@ class Template extends Component {
           </div>
           {renderModules}
 
-          <div className="row" style={{ fontSize: "15px", fontFamily: "Calibri" }}>
-            <div className="col-2" style={{ minWidth: 140 }}>
-              <b>Semester GPA:</b>
-            </div>
-            <div className="col">
-              <b>{get(p_ObjTranscript, "semGPA")}</b>
+          <div>
+            <div className="row" style={{ fontSize: "15px", fontFamily: "Calibri" }}>
+              <div className="col-2" style={{ minWidth: 140 }}>
+                <b>Semester GPA:</b>
+              </div>
+              <div className="col">
+                <b>{get(p_ObjTranscript, "semGPA")}</b>
+              </div>
             </div>
           </div>
-          <div className="row" style={{ fontSize: "15px", fontFamily: "Calibri" }}>
-            <div className="col-2" style={{ minWidth: 140 }}>
-              <b>{get(p_ObjTranscript, "description")}</b>
-            </div>
-            <div className="col">
-              <b>{get(p_ObjTranscript, "course")}</b>
+          <div>
+            <div className="row" style={{ fontSize: "15px", fontFamily: "Calibri" }}>
+              <div className="col-2" style={{ minWidth: 140 }}>
+                <b>{get(p_ObjTranscript, "description")}</b>
+              </div>
+              <div className="col">
+                <b>{get(p_ObjTranscript, "course")}</b>
+              </div>
             </div>
           </div>
           {dispOthItems}
