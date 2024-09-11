@@ -18,9 +18,9 @@ export const ExplanatoryTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="h5 mt-4 mb-0 justify-content-left font-weight-bold d-flex" style={{fontFamily:'Georgia italic'}}><u>Explanatory Notes</u></div>
       <br></br>
       <br></br>
-      <div className="row my-0">
+      <div className="row">
         <div className="col"></div>
-        <div className="col-6 text-center">
+        <div className="col-5 text-center">
           <table style={{border:'1px solid'}}>
             <th style={{border:'1px solid'}}>Award</th>
             <th style={{border:'1px solid'}}>Criteria for Award</th>
