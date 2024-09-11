@@ -15,16 +15,16 @@ export const ExplanatoryTemplate: FunctionComponent<TemplateProps<GovtechOpencer
 }) => (
   <Page certificateBg={`url('${certificateBg}')`} className="p-4">
     <div className="container" style={{width:'800px', backgroundColor:'rgb(255,255,238)', borderStyle:'solid', borderColor:'rgb(204,204,170)'}}>
-      <div className="h5 mt-4 mb-0 justify-content-left font-weight-bold font-italic d-flex" style={{fontFamily:'Georgia italic'}}><u>Explanatory Notes</u></div>
+      <div className="h5 mt-4 mb-0 justify-content-left font-weight-bold d-flex" style={{fontFamily:'Georgia italic'}}><u>Explanatory Notes</u></div>
       <br></br>
       <br></br>
-      <div className="justify-content-center" style={{border:'1px solid'}}>
+      <div className="col-5 h5 mt-4 d-flex justify-content-center">
         <table style={{border:'1px solid', width:'50%'}}>
           <th>Award</th>
           <th>Criteria for Award</th>
-          <tr><td>Outstanding</td><td>Top 10%</td></tr>
-          <tr><td>Excellent</td><td>Next 15%</td></tr>
-          <tr><td>Good</td><td>Next 25%</td></tr>
+          <tr><td style={{border:'1px solid'}}>Outstanding</td><td style={{border:'1px solid'}}>Top 10%</td></tr>
+          <tr><td style={{border:'1px solid'}}>Excellent</td><td style={{border:'1px solid'}}>Next 15%</td></tr>
+          <tr><td style={{border:'1px solid'}}>Good</td><td style={{border:'1px solid'}}>Next 25%</td></tr>
         </table>
       </div>  
       <br></br>
@@ -39,12 +39,14 @@ export const ExplanatoryTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <br></br>
       <br></br>
       <table>
-        <tr><td style={{width:'10%'}}>a.</td><td style={{width:'90%'}}>Contributing to the team's work - member makes important contributions to the team's work.</td></tr>
+        <tr><td style={{width:'5%'}}>a.</td><td style={{width:'95%'}}>Contributing to the team's work - member makes important contributions to the team's work.</td></tr>
         <tr><td>b.</td><td>Interacting with teammates - member asks for and shows an interest in teammate's idea.</td></tr>
         <tr><td>c.</td><td>Keeping the team on track - member makes sure that teammates are making appropriate progress.</td></tr>
         <tr><td>d.</td><td>Expecting quality - member cares that the team does excellent work, even if there is no additional reward.</td></tr>
         <tr><td>e.</td><td>Having relevant knowledge, skills and abilities - member demonstrates the knowledge, skills and ability to do excellent work.</td></tr>
       </table>
+      <br></br>
+      <br></br>
     </div>
   </Page>
 );
