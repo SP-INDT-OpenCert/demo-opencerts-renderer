@@ -18,6 +18,7 @@ export const ExplanatoryTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="h5 mt-4 mb-0 justify-content-left font-weight-bold font-italic d-flex" style={{fontFamily:'Georgia italic'}}><u>Explanatory Notes</u></div>
       <br></br>
       <br></br>
+      <div className="justify-content-center" style={{border:'1px solid'}}>
         <table style={{border:'1px solid', width:'50%'}}>
           <th>Award</th>
           <th>Criteria for Award</th>
@@ -25,6 +26,7 @@ export const ExplanatoryTemplate: FunctionComponent<TemplateProps<GovtechOpencer
           <tr><td>Excellent</td><td>Next 15%</td></tr>
           <tr><td>Good</td><td>Next 25%</td></tr>
         </table>
+      </div>  
       <br></br>
       <br></br>
       All students in SP participate in 6 or more team-based project work in the course of their 3-year diploma programme. At the end of each project, a peer rating exercise using a common framework is conducted within each team to rank each student according to their teamwork behaviour. Students get a teamwork scored based on their rank.
@@ -37,7 +39,7 @@ export const ExplanatoryTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <br></br>
       <br></br>
       <table>
-        <tr><td>a.</td><td>Contributing to the team's work - member makes important contributions to the team's work.</td></tr>
+        <tr><td style={{width:'10%'}}>a.</td><td style={{width:'90%'}}>Contributing to the team's work - member makes important contributions to the team's work.</td></tr>
         <tr><td>b.</td><td>Interacting with teammates - member asks for and shows an interest in teammate's idea.</td></tr>
         <tr><td>c.</td><td>Keeping the team on track - member makes sure that teammates are making appropriate progress.</td></tr>
         <tr><td>d.</td><td>Expecting quality - member cares that the team does excellent work, even if there is no additional reward.</td></tr>
