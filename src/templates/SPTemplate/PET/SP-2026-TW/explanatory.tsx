@@ -1,7 +1,7 @@
 //import { format } from "date-fns";
 //import { get } from "lodash";
-//import styled from "@emotion/styled";
-//import React, { FunctionComponent } from "react";
+import styled from "@emotion/styled";
+import React, { FunctionComponent } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
 import { GovtechOpencertsTemplateCertificate } from "../samples";
