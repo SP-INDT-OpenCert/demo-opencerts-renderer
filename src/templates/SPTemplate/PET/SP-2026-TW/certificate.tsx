@@ -27,7 +27,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
 
       <div className="h2 mt-5 mb-0 font-weight-bold d-flex justify-content-center" style={{fontFamily:'Times', fontVariant:'small-caps'}}>{document.name} </div>
       
-      <div className="h5 mt-4 d-flex justify-content-center" style={{fontFamily:'Times'}}>It is hereby certified that</div>
+      <div className="h5 mt-4 d-flex justify-content-center" style={{fontFamily:'Times'}}>Awarded to</div>
       <div className="h5 mt-4 mb-0 justify-content-center font-weight-bold font-italic d-flex" style={{fontFamily:'Georgia italic'}}>	{document.recipient.name} </div>
 
       <div className="row my-0">
@@ -36,18 +36,12 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
         <div className="col"></div>
       </div>
 
-      <div className="h5 mt-4 d-flex justify-content-center" style={{fontFamily:'Times'}}>has successfully completed the {document.name}</div>
+      <div className="h5 mt-4 d-flex justify-content-center" style={{fontFamily:'Times'}}>for demonstrating {document.additionalData.award} Teamwork Skills {document.name}</div>
       
       <div className="row my-0">
         <div className="col"></div>
-        <div className="col-1 h5 mt-4 d-flex justify-content-center" style={{fontFamily:'Times'}} > on </div>
-        <div className="col-3">
-	        <div className="h5 mt-3 mb-0 d-flex justify-content-center font-italic" style={{fontFamily:'Georgia italic'}} >{format(document.graduationDate, 'D MMMM YYYY')} </div>
-          <div className="row my-0">
-            <div className="col" style={{borderBottomWidth:'1px', borderTopWidth:'0px', borderStyle:'solid', borderColor:'#333'}} ></div>
-	        </div>
-	      </div>
-	      <div className="col"></div>
+        <div className="col-1 h5 mt-4 d-flex justify-content-center" style={{fontFamily:'Times'}} > Academic Year {document.additionalData.ay} </div>
+        <div className="col"></div>
       </div>
 
       <div className="row" style={{height:'100px'}} ></div>
@@ -66,7 +60,6 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       
       <div className="row" style={{height:'100px'}} ></div>
       <div className="row">
-        <div className="h6 my-5 ml-3 d-flex" style={{fontFamily:'Times'}} >{document.recipient.studentId}/{document.recipient.nric}</div>
       </div>
     </div>
   </Page>
