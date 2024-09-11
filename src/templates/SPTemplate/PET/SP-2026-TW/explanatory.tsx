@@ -21,9 +21,9 @@ export const ExplanatoryTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="row my-0">
         <div className="col"></div>
         <div className="col-6 h5 d-flex justify-content-center">
-          <table style={{border:'1px solid', width:'60%'}}>
-            <th>Award</th>
-            <th>Criteria for Award</th>
+          <table style={{border:'1px solid'}}>
+            <th style={{border:'1px solid'}}>Award</th>
+            <th style={{border:'1px solid'}}>Criteria for Award</th>
             <tr><td style={{border:'1px solid'}}>Outstanding</td><td style={{border:'1px solid'}}>Top 10%</td></tr>
             <tr><td style={{border:'1px solid'}}>Excellent</td><td style={{border:'1px solid'}}>Next 15%</td></tr>
             <tr><td style={{border:'1px solid'}}>Good</td><td style={{border:'1px solid'}}>Next 25%</td></tr>
