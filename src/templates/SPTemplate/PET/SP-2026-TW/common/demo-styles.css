@@ -1,0 +1,18 @@
+body {
+  background: white;
+  font-family: "Source Sans Pro", sans-serif;
+  /* line-height: 1.5; */
+  line-height: normal;
+  margin: 0px;
+}
+
+.root {
+  font: "Source Sans Pro", sans-serif;
+  --font-monospace: "Source Sans Pro", sans-serif;
+  --font-monospace-size: 0.8rem !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.privacy-banner {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,21 @@
+import { Meta, Preview, Props, Description, Story } from "@storybook/addon-docs/blocks";
+import { MediaTemplate } from "./media";
+import { customTemplateCertificate } from "../samples";
+
+<Meta title="MDX|MediaTemplate" component={MediaTemplate} />
+
+# MediaTemplate component
+
+<Description of={MediaTemplate} />
+
+# Props
+
+<Props of={MediaTemplate} />
+
+# Usage
+
+<Preview withSource>
+  <Story name="basic sample">
+    <MediaTemplate document={customTemplateCertificate} />
+  </Story>
+</Preview>
