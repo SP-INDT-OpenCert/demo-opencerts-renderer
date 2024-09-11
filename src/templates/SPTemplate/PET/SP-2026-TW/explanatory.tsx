@@ -18,13 +18,15 @@ export const ExplanatoryTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="h5 mt-4 mb-0 justify-content-left font-weight-bold font-italic d-flex" style={{fontFamily:'Georgia italic'}}><u>Explanatory Notes</u></div>
       <br></br>
       <br></br>
-        <table style={{border:'1px solid', width:'50%',  margin-left:auto, margin-right:auto}}>
+      <div className="justify-content-left">
+        <table style={{border:'1px solid', width:'50%'}}>
           <th>Award</th>
           <th>Criteria for Award</th>
           <tr><td>Outstanding</td><td>Top 10%</td></tr>
           <tr><td>Excellent</td><td>Next 15%</td></tr>
           <tr><td>Good</td><td>Next 25%</td></tr>
         </table>
+      </div>  
       <br></br>
       <br></br>
       All students in SP participate in 6 or more team-based project work in the course of their 3-year diploma programme. At the end of each project, a peer rating exercise using a common framework is conducted within each team to rank each student according to their teamwork behaviour. Students get a teamwork scored based on their rank.
