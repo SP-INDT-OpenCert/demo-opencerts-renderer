@@ -3,12 +3,8 @@ import { get } from "lodash";
 import styled from "@emotion/styled";
 import React, { FunctionComponent } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-//import "./common/demo-styles.css";
 import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
-import { GovtechOpencertsTemplateCertificate } from "../samples";
-//import { PrintWatermark } from "./common/print-watermark";
-//import mainLogo from "./common/opencerts-logo.svg";
-//import logo from "./common/govtech-logo.png";
+//import { GovtechOpencertsTemplateCertificate } from "../samples";
 import certificateBg from "./common/certificate-background.png";
 import { IMG_CERT_SPLOGO, IMG_CERT_SEAL } from './Certimages';
 
