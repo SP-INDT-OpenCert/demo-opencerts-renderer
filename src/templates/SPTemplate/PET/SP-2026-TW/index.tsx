@@ -1,5 +1,6 @@
 import { CertificateTemplate } from "./certificate";
-import { ExplanatoryTemplate } from "./explanatory";
+//import { ExplanatoryTemplate } from "./explanatory";
+import { TranscriptTemplate } from "./explanatory";
 
 export const templates = [
   {
@@ -11,5 +12,10 @@ export const templates = [
     id: "explanatory",
     label: "Explanatory",
     template: ExplanatoryTemplate
+  },
+  {
+    id: "transcript",
+    label: "Explanatory Notes",
+    template: TranscriptTemplate
   }
 ];
