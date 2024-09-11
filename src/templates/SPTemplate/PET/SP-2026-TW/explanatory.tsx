@@ -18,7 +18,7 @@ export const ExplanatoryTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <div className="h5 mt-4 mb-0 justify-content-left font-weight-bold font-italic d-flex" style={{fontFamily:'Georgia italic'}}><u>Explanatory Notes</u></div>
       <br></br>
       <br></br>
-        <table border=1 width=50%>
+        <table style={{border:'1px solid'; width:50%}}>
           <th>Award</th>
           <th>Criteria for Award</th>
           <tr><td>Outstanding</td><td>Top 10%</td></tr>
@@ -37,11 +37,11 @@ export const ExplanatoryTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <br></br>
       <br></br>
       <table>
-        <tr><td width=10%>a.</td><td width=90%>Contributing to the team's work - member makes important contributions to the team's work.</td></tr>
-        <tr><td width=10%>b.</td><td width=90%>Interacting with teammates - member asks for and shows an interest in teammate's idea.</td></tr>
-        <tr><td width=10%>c.</td><td width=90%>Keeping the team on track - member makes sure that teammates are making appropriate progress.</td></tr>
-        <tr><td width=10%>d.</td><td width=90%>Expecting quality - member cares that the team does excellent work, even if there is no additional reward.</td></tr>
-        <tr><td width=10%>e.</td><td width=90%>Having relevant knowledge, skills and abilities - member demonstrates the knowledge, skills and ability to do excellent work.</td></tr>
+        <tr><td>a.</td><td>Contributing to the team's work - member makes important contributions to the team's work.</td></tr>
+        <tr><td>b.</td><td>Interacting with teammates - member asks for and shows an interest in teammate's idea.</td></tr>
+        <tr><td>c.</td><td>Keeping the team on track - member makes sure that teammates are making appropriate progress.</td></tr>
+        <tr><td>d.</td><td>Expecting quality - member cares that the team does excellent work, even if there is no additional reward.</td></tr>
+        <tr><td>e.</td><td>Having relevant knowledge, skills and abilities - member demonstrates the knowledge, skills and ability to do excellent work.</td></tr>
       </table>
     </div>
   </Page>
