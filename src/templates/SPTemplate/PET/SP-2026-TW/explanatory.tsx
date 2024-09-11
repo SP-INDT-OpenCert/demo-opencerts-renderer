@@ -20,7 +20,7 @@ export const ExplanatoryTemplate: FunctionComponent<TemplateProps<GovtechOpencer
       <br></br>
       <div className="row">
         <div className="col"></div>
-        <div className="col-4 text-center">
+        <div className="col-8 text-center">
           <table style={{border:'1px solid'}}>
             <th style={{border:'1px solid'}}>Award</th>
             <th style={{border:'1px solid'}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criteria for Award&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
