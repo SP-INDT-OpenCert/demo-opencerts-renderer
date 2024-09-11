@@ -36,7 +36,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
         <div className="col"></div>
       </div>
 
-      <div className="h5 mt-4 d-flex justify-content-center" style={{fontFamily:'Times'}}>for demonstrating <b>{document.additionalData.award}</b> Teamwork Skills</div>
+      <div className="h5 mt-4 d-flex justify-content-center" style={{fontFamily:'Times'}}>for demonstrating&nbsp;<b>{document.additionalData.award}</b>&nbsp;Teamwork Skills</div>
       
       <div className="row my-0">
         <div className="col"></div>
